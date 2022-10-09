@@ -1,10 +1,11 @@
 using System.Globalization;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
 
 namespace Assignment_2._0
 {
-    public partial class Form1 : Form
+    public partial class form1 : Form
     {
         public const decimal CSharpFundamentals = 900m;
         public const decimal CSharpBasics = 1500m;
@@ -44,8 +45,8 @@ namespace Assignment_2._0
 
         public decimal TotalCourseFees = 0m;
         public decimal TotalLocationFees = 0m;
-        public decimal NumberOfParticipants = 0;
-        public Form1()
+        public decimal NumberOfParticipants = 1;
+        public form1()
         {
             InitializeComponent();
         }
@@ -165,9 +166,26 @@ namespace Assignment_2._0
 
 
                     }
-                    if(No) 
-                    { ;}
+                    try
+                    {
+                        if (int.Parse(NoParticipantsTextBox.Text.ToString()) > 0 &&
+                            int.Parse(NoParticipantsTextBox.Text.ToString()) <= 10)
+                        {
+                            NumberOfParticipants = int.Parse(NoParticipantsTextBox.Text.ToString());
+                        }
+                        else
+                        {
+                            MessageBox.Show("Minimum 1 & Max of 10 participants allowed!",
+                            "Incorrect input", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        }
+                    }
+                    catch  {
+                        
+                        if (!NoParticipantsTextBox.Text.All(Char.IsDigit) || String.IsNullOrEmpty(NoParticipantsTextBox.Text))
+                        { MessageBox.Show("Please enter numerical data for number of participants", "Input Error", 
+                            MessageBoxButtons.OK, MessageBoxIcon.Error); }
 
+                    }
 
                 }
                 else { MessageBox.Show("Please select a Location you wish to Attend the course", 
@@ -179,61 +197,10 @@ namespace Assignment_2._0
                     "Course Selection Needed", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
 
-            
-
-            /*string curLocation = LocationListBox.SelectedItem.ToString();
-            string[] curLocationTokens = curLocation.Split(' ');
-            String location = curLocationTokens[0];
-            switch (location)
-            {
-                case "1":
-                    {
-                        TotalLocationFees += BelmulletPrice;
-                        MessageBox.Show(TotalLocationFees.ToString());
-                        break;
-                    }
-                case "2":
-                    {
-                        TotalLocationFees += ClifdenPrice;
-                        MessageBox.Show(TotalLocationFees.ToString());
-                        break;
-                    }
-                case "3":
-                    {
-                        TotalLocationFees += CorkPrice;
-                        MessageBox.Show(TotalLocationFees.ToString()); ;
-                        break;
-                    }
-                case "4":
-                    {
-                        TotalLocationFees += DublinPrice;
-                        MessageBox.Show(TotalLocationFees.ToString());
-                        break;
-                    }
-                case "5":
-                    {
-                        TotalLocationFees += KillameyPrice;
-                        MessageBox.Show(TotalLocationFees.ToString());
-                        break;
-                    }
-                case "6":
-                    {
-                        TotalLocationFees += LetterkennyPrice;
-                        MessageBox.Show(TotalLocationFees.ToString());
-                        break;
-                    }
-                case "7":{
-                        TotalLocationFees += SligoPrice;
-                        MessageBox.Show(TotalLocationFees.ToString());
-                        break;
-                    }
-
-
-            }*/
 
 
         }
 
-        
+       
     }
 }

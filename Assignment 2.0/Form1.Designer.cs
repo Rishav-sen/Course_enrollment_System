@@ -1,6 +1,6 @@
 ﻿namespace Assignment_2._0
 {
-    partial class Form1
+    partial class form1
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(form1));
             this.CourseListBox = new System.Windows.Forms.ListBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.BannerOne = new System.Windows.Forms.PictureBox();
@@ -53,15 +53,33 @@
             this.DigitalCertCheckBox = new System.Windows.Forms.CheckBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.DisplayButton = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.NoParticipantsTextBox = new System.Windows.Forms.TextBox();
             this.textBox11 = new System.Windows.Forms.TextBox();
+            this.DisplayGroupBox = new System.Windows.Forms.GroupBox();
+            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.CourseSelectionDisplayTextBox = new System.Windows.Forms.TextBox();
+            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.LodgingCostDisplayTextBox = new System.Windows.Forms.TextBox();
+            this.textBox22 = new System.Windows.Forms.TextBox();
+            this.EnrollmentFeesDisplayTextBox = new System.Windows.Forms.TextBox();
+            this.textBox24 = new System.Windows.Forms.TextBox();
+            this.textBox25 = new System.Windows.Forms.TextBox();
+            this.textBox18 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.BannerOne)).BeginInit();
             this.CourseMenuGroupBox.SuspendLayout();
             this.LocationGroupBox.SuspendLayout();
             this.ParticipantGroupBox.SuspendLayout();
             this.RoomGroupBox.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.DisplayGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // CourseListBox
@@ -85,9 +103,9 @@
             // BannerOne
             // 
             this.BannerOne.Image = ((System.Drawing.Image)(resources.GetObject("BannerOne.Image")));
-            this.BannerOne.Location = new System.Drawing.Point(698, 614);
+            this.BannerOne.Location = new System.Drawing.Point(914, 705);
             this.BannerOne.Name = "BannerOne";
-            this.BannerOne.Size = new System.Drawing.Size(248, 122);
+            this.BannerOne.Size = new System.Drawing.Size(314, 122);
             this.BannerOne.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.BannerOne.TabIndex = 3;
             this.BannerOne.TabStop = false;
@@ -171,7 +189,7 @@
             this.textBox3.ReadOnly = true;
             this.textBox3.Size = new System.Drawing.Size(146, 64);
             this.textBox3.TabIndex = 7;
-            this.textBox3.Text = "Enrollment Fees";
+            this.textBox3.Text = "Enrollment Fees:";
             // 
             // LocationGroupBox
             // 
@@ -190,7 +208,7 @@
             this.textBox5.BackColor = System.Drawing.Color.SeaGreen;
             this.textBox5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.textBox5.ForeColor = System.Drawing.Color.White;
-            this.textBox5.Location = new System.Drawing.Point(8, 109);
+            this.textBox5.Location = new System.Drawing.Point(19, 109);
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
             this.textBox5.ReadOnly = true;
@@ -205,11 +223,11 @@
             this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox7.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.textBox7.ForeColor = System.Drawing.Color.White;
-            this.textBox7.Location = new System.Drawing.Point(227, 110);
+            this.textBox7.Location = new System.Drawing.Point(240, 109);
             this.textBox7.Multiline = true;
             this.textBox7.Name = "textBox7";
             this.textBox7.ReadOnly = true;
-            this.textBox7.Size = new System.Drawing.Size(348, 64);
+            this.textBox7.Size = new System.Drawing.Size(348, 63);
             this.textBox7.TabIndex = 7;
             this.textBox7.Text = "Accomodation Fees Per Day:";
             // 
@@ -218,7 +236,7 @@
             this.textBox8.BackColor = System.Drawing.Color.SeaGreen;
             this.textBox8.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.textBox8.ForeColor = System.Drawing.Color.White;
-            this.textBox8.Location = new System.Drawing.Point(8, 39);
+            this.textBox8.Location = new System.Drawing.Point(19, 38);
             this.textBox8.Multiline = true;
             this.textBox8.Name = "textBox8";
             this.textBox8.ReadOnly = true;
@@ -240,7 +258,7 @@
             " Killamey         \t\t\t|€149.99",
             " Letterkenny \t\t\t|€89.99",
             " Sligo          \t\t\t|€119.99"});
-            this.LocationListBox.Location = new System.Drawing.Point(8, 191);
+            this.LocationListBox.Location = new System.Drawing.Point(19, 191);
             this.LocationListBox.Name = "LocationListBox";
             this.LocationListBox.Size = new System.Drawing.Size(569, 182);
             this.LocationListBox.TabIndex = 0;
@@ -252,7 +270,7 @@
             this.ParticipantGroupBox.Controls.Add(this.ExecutiveSuiteRadioButton);
             this.ParticipantGroupBox.Controls.Add(this.JuniorSuiteRadioButton);
             this.ParticipantGroupBox.Controls.Add(this.MasterSuiteRadioButton);
-            this.ParticipantGroupBox.Location = new System.Drawing.Point(168, 605);
+            this.ParticipantGroupBox.Location = new System.Drawing.Point(950, 416);
             this.ParticipantGroupBox.Name = "ParticipantGroupBox";
             this.ParticipantGroupBox.Size = new System.Drawing.Size(278, 274);
             this.ParticipantGroupBox.TabIndex = 10;
@@ -276,7 +294,7 @@
             this.textBox9.BackColor = System.Drawing.Color.IndianRed;
             this.textBox9.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.textBox9.ForeColor = System.Drawing.Color.White;
-            this.textBox9.Location = new System.Drawing.Point(15, 40);
+            this.textBox9.Location = new System.Drawing.Point(15, 30);
             this.textBox9.Multiline = true;
             this.textBox9.Name = "textBox9";
             this.textBox9.ReadOnly = true;
@@ -323,7 +341,7 @@
             this.RoomGroupBox.BackColor = System.Drawing.Color.DarkGray;
             this.RoomGroupBox.Controls.Add(this.DigitalCertCheckBox);
             this.RoomGroupBox.Controls.Add(this.textBox6);
-            this.RoomGroupBox.Location = new System.Drawing.Point(23, 416);
+            this.RoomGroupBox.Location = new System.Drawing.Point(23, 481);
             this.RoomGroupBox.Name = "RoomGroupBox";
             this.RoomGroupBox.Size = new System.Drawing.Size(872, 48);
             this.RoomGroupBox.TabIndex = 11;
@@ -355,7 +373,7 @@
             // 
             // DisplayButton
             // 
-            this.DisplayButton.Location = new System.Drawing.Point(626, 562);
+            this.DisplayButton.Location = new System.Drawing.Point(96, 553);
             this.DisplayButton.Name = "DisplayButton";
             this.DisplayButton.Size = new System.Drawing.Size(112, 34);
             this.DisplayButton.TabIndex = 12;
@@ -363,24 +381,26 @@
             this.DisplayButton.UseVisualStyleBackColor = true;
             this.DisplayButton.MouseClick += new System.Windows.Forms.MouseEventHandler(this.DisplayButtonClick);
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Location = new System.Drawing.Point(675, 747);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(372, 87);
-            this.groupBox1.TabIndex = 13;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
-            // 
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.DarkGray;
+            this.groupBox2.Controls.Add(this.NoParticipantsTextBox);
             this.groupBox2.Controls.Add(this.textBox11);
-            this.groupBox2.Location = new System.Drawing.Point(23, 481);
+            this.groupBox2.Location = new System.Drawing.Point(23, 427);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(872, 48);
+            this.groupBox2.Size = new System.Drawing.Size(774, 48);
             this.groupBox2.TabIndex = 14;
             this.groupBox2.TabStop = false;
+            // 
+            // NoParticipantsTextBox
+            // 
+            this.NoParticipantsTextBox.Location = new System.Drawing.Point(664, 4);
+            this.NoParticipantsTextBox.Multiline = true;
+            this.NoParticipantsTextBox.Name = "NoParticipantsTextBox";
+            this.NoParticipantsTextBox.Size = new System.Drawing.Size(43, 42);
+            this.NoParticipantsTextBox.TabIndex = 17;
+            this.NoParticipantsTextBox.Text = "1";
+            this.NoParticipantsTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox11
             // 
@@ -391,19 +411,228 @@
             this.textBox11.Multiline = true;
             this.textBox11.Name = "textBox11";
             this.textBox11.ReadOnly = true;
-            this.textBox11.Size = new System.Drawing.Size(718, 48);
+            this.textBox11.Size = new System.Drawing.Size(595, 48);
             this.textBox11.TabIndex = 16;
-            this.textBox11.Text = "Do you wish to receive a digital course completion certificate?";
+            this.textBox11.Text = "Number of Participants?";
             this.textBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // Form1
+            // DisplayGroupBox
+            // 
+            this.DisplayGroupBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.DisplayGroupBox.Controls.Add(this.textBox18);
+            this.DisplayGroupBox.Controls.Add(this.textBox25);
+            this.DisplayGroupBox.Controls.Add(this.textBox24);
+            this.DisplayGroupBox.Controls.Add(this.EnrollmentFeesDisplayTextBox);
+            this.DisplayGroupBox.Controls.Add(this.textBox22);
+            this.DisplayGroupBox.Controls.Add(this.LodgingCostDisplayTextBox);
+            this.DisplayGroupBox.Controls.Add(this.textBox20);
+            this.DisplayGroupBox.Controls.Add(this.CourseSelectionDisplayTextBox);
+            this.DisplayGroupBox.Controls.Add(this.textBox19);
+            this.DisplayGroupBox.Controls.Add(this.textBox17);
+            this.DisplayGroupBox.Controls.Add(this.textBox16);
+            this.DisplayGroupBox.Controls.Add(this.textBox15);
+            this.DisplayGroupBox.Controls.Add(this.textBox14);
+            this.DisplayGroupBox.Controls.Add(this.textBox13);
+            this.DisplayGroupBox.Controls.Add(this.textBox12);
+            this.DisplayGroupBox.Location = new System.Drawing.Point(31, 605);
+            this.DisplayGroupBox.Name = "DisplayGroupBox";
+            this.DisplayGroupBox.Size = new System.Drawing.Size(864, 433);
+            this.DisplayGroupBox.TabIndex = 15;
+            this.DisplayGroupBox.TabStop = false;
+            // 
+            // textBox16
+            // 
+            this.textBox16.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.textBox16.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox16.Location = new System.Drawing.Point(128, 155);
+            this.textBox16.Multiline = true;
+            this.textBox16.Name = "textBox16";
+            this.textBox16.ReadOnly = true;
+            this.textBox16.Size = new System.Drawing.Size(225, 31);
+            this.textBox16.TabIndex = 4;
+            this.textBox16.Text = "Course Enrollment Fees:";
+            // 
+            // textBox15
+            // 
+            this.textBox15.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.textBox15.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox15.Location = new System.Drawing.Point(128, 192);
+            this.textBox15.Multiline = true;
+            this.textBox15.Name = "textBox15";
+            this.textBox15.ReadOnly = true;
+            this.textBox15.Size = new System.Drawing.Size(225, 31);
+            this.textBox15.TabIndex = 3;
+            this.textBox15.Text = "Lodging Cost:";
+            // 
+            // textBox14
+            // 
+            this.textBox14.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.textBox14.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.textBox14.Location = new System.Drawing.Point(0, 0);
+            this.textBox14.Multiline = true;
+            this.textBox14.Name = "textBox14";
+            this.textBox14.ReadOnly = true;
+            this.textBox14.Size = new System.Drawing.Size(864, 44);
+            this.textBox14.TabIndex = 2;
+            this.textBox14.Text = "- Booking Details - ";
+            this.textBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox13
+            // 
+            this.textBox13.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.textBox13.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox13.Location = new System.Drawing.Point(128, 229);
+            this.textBox13.Multiline = true;
+            this.textBox13.Name = "textBox13";
+            this.textBox13.ReadOnly = true;
+            this.textBox13.Size = new System.Drawing.Size(225, 31);
+            this.textBox13.TabIndex = 1;
+            this.textBox13.Text = "Optional Cost:";
+            // 
+            // textBox12
+            // 
+            this.textBox12.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.textBox12.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox12.Location = new System.Drawing.Point(128, 67);
+            this.textBox12.Multiline = true;
+            this.textBox12.Name = "textBox12";
+            this.textBox12.ReadOnly = true;
+            this.textBox12.Size = new System.Drawing.Size(186, 31);
+            this.textBox12.TabIndex = 0;
+            this.textBox12.Text = "Selected Course - ";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(272, 553);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(112, 34);
+            this.button1.TabIndex = 16;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // textBox17
+            // 
+            this.textBox17.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.textBox17.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox17.Location = new System.Drawing.Point(128, 351);
+            this.textBox17.Multiline = true;
+            this.textBox17.Name = "textBox17";
+            this.textBox17.ReadOnly = true;
+            this.textBox17.Size = new System.Drawing.Size(225, 33);
+            this.textBox17.TabIndex = 5;
+            this.textBox17.Text = "Grand Total:";
+            // 
+            // textBox19
+            // 
+            this.textBox19.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.textBox19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.textBox19.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox19.Location = new System.Drawing.Point(146, 309);
+            this.textBox19.Multiline = true;
+            this.textBox19.Name = "textBox19";
+            this.textBox19.ReadOnly = true;
+            this.textBox19.Size = new System.Drawing.Size(475, 26);
+            this.textBox19.TabIndex = 7;
+            this.textBox19.Text = "------------------------------------------------------------------------";
+            // 
+            // CourseSelectionDisplayTextBox
+            // 
+            this.CourseSelectionDisplayTextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.CourseSelectionDisplayTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.CourseSelectionDisplayTextBox.Location = new System.Drawing.Point(298, 67);
+            this.CourseSelectionDisplayTextBox.Multiline = true;
+            this.CourseSelectionDisplayTextBox.Name = "CourseSelectionDisplayTextBox";
+            this.CourseSelectionDisplayTextBox.ReadOnly = true;
+            this.CourseSelectionDisplayTextBox.Size = new System.Drawing.Size(221, 31);
+            this.CourseSelectionDisplayTextBox.TabIndex = 8;
+            // 
+            // textBox20
+            // 
+            this.textBox20.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.textBox20.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox20.Location = new System.Drawing.Point(128, 266);
+            this.textBox20.Multiline = true;
+            this.textBox20.Name = "textBox20";
+            this.textBox20.ReadOnly = true;
+            this.textBox20.Size = new System.Drawing.Size(225, 37);
+            this.textBox20.TabIndex = 9;
+            this.textBox20.Text = "Discount Apllied: ";
+            // 
+            // LodgingCostDisplayTextBox
+            // 
+            this.LodgingCostDisplayTextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.LodgingCostDisplayTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.LodgingCostDisplayTextBox.Location = new System.Drawing.Point(421, 194);
+            this.LodgingCostDisplayTextBox.Multiline = true;
+            this.LodgingCostDisplayTextBox.Name = "LodgingCostDisplayTextBox";
+            this.LodgingCostDisplayTextBox.ReadOnly = true;
+            this.LodgingCostDisplayTextBox.Size = new System.Drawing.Size(221, 31);
+            this.LodgingCostDisplayTextBox.TabIndex = 10;
+            // 
+            // textBox22
+            // 
+            this.textBox22.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.textBox22.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox22.Location = new System.Drawing.Point(421, 231);
+            this.textBox22.Multiline = true;
+            this.textBox22.Name = "textBox22";
+            this.textBox22.ReadOnly = true;
+            this.textBox22.Size = new System.Drawing.Size(221, 31);
+            this.textBox22.TabIndex = 11;
+            // 
+            // EnrollmentFeesDisplayTextBox
+            // 
+            this.EnrollmentFeesDisplayTextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.EnrollmentFeesDisplayTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.EnrollmentFeesDisplayTextBox.Location = new System.Drawing.Point(421, 157);
+            this.EnrollmentFeesDisplayTextBox.Multiline = true;
+            this.EnrollmentFeesDisplayTextBox.Name = "EnrollmentFeesDisplayTextBox";
+            this.EnrollmentFeesDisplayTextBox.ReadOnly = true;
+            this.EnrollmentFeesDisplayTextBox.Size = new System.Drawing.Size(221, 31);
+            this.EnrollmentFeesDisplayTextBox.TabIndex = 12;
+            // 
+            // textBox24
+            // 
+            this.textBox24.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.textBox24.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox24.Location = new System.Drawing.Point(421, 353);
+            this.textBox24.Multiline = true;
+            this.textBox24.Name = "textBox24";
+            this.textBox24.ReadOnly = true;
+            this.textBox24.Size = new System.Drawing.Size(221, 31);
+            this.textBox24.TabIndex = 13;
+            // 
+            // textBox25
+            // 
+            this.textBox25.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.textBox25.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox25.Location = new System.Drawing.Point(421, 268);
+            this.textBox25.Multiline = true;
+            this.textBox25.Name = "textBox25";
+            this.textBox25.ReadOnly = true;
+            this.textBox25.Size = new System.Drawing.Size(221, 35);
+            this.textBox25.TabIndex = 14;
+            // 
+            // textBox18
+            // 
+            this.textBox18.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.textBox18.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox18.Location = new System.Drawing.Point(128, 120);
+            this.textBox18.Multiline = true;
+            this.textBox18.Name = "textBox18";
+            this.textBox18.ReadOnly = true;
+            this.textBox18.Size = new System.Drawing.Size(221, 29);
+            this.textBox18.TabIndex = 15;
+            // 
+            // form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1559, 1014);
+            this.ClientSize = new System.Drawing.Size(1245, 1050);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.DisplayGroupBox);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.DisplayButton);
             this.Controls.Add(this.RoomGroupBox);
             this.Controls.Add(this.ParticipantGroupBox);
@@ -413,7 +642,7 @@
             this.Controls.Add(this.BannerOne);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form1";
+            this.Name = "form1";
             this.Text = "L2P Ltd.";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.BannerOne)).EndInit();
@@ -427,6 +656,8 @@
             this.RoomGroupBox.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.DisplayGroupBox.ResumeLayout(false);
+            this.DisplayGroupBox.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -457,10 +688,27 @@
         private TextBox textBox9;
         private Button DisplayButton;
         private TextBox textBox10;
-        private GroupBox groupBox1;
         private TextBox textBox6;
         private CheckBox DigitalCertCheckBox;
         private GroupBox groupBox2;
         private TextBox textBox11;
+        private TextBox NoParticipantsTextBox;
+        private GroupBox DisplayGroupBox;
+        private TextBox textBox16;
+        private TextBox textBox15;
+        private TextBox textBox14;
+        private TextBox textBox13;
+        private TextBox textBox12;
+        private Button button1;
+        private TextBox textBox18;
+        private TextBox textBox25;
+        private TextBox textBox24;
+        private TextBox EnrollmentFeesDisplayTextBox;
+        private TextBox textBox22;
+        private TextBox LodgingCostDisplayTextBox;
+        private TextBox textBox20;
+        private TextBox CourseSelectionDisplayTextBox;
+        private TextBox textBox19;
+        private TextBox textBox17;
     }
 }
