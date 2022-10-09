@@ -44,50 +44,50 @@
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.LocationListBox = new System.Windows.Forms.ListBox();
             this.ParticipantGroupBox = new System.Windows.Forms.GroupBox();
+            this.textBox10 = new System.Windows.Forms.TextBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.ExecutiveSuiteRadioButton = new System.Windows.Forms.RadioButton();
+            this.JuniorSuiteRadioButton = new System.Windows.Forms.RadioButton();
+            this.MasterSuiteRadioButton = new System.Windows.Forms.RadioButton();
             this.RoomGroupBox = new System.Windows.Forms.GroupBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.DisplayButton = new System.Windows.Forms.Button();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.DigitalCertCheckBox = new System.Windows.Forms.CheckBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
+            this.DisplayButton = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.textBox11 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.BannerOne)).BeginInit();
             this.CourseMenuGroupBox.SuspendLayout();
             this.LocationGroupBox.SuspendLayout();
             this.ParticipantGroupBox.SuspendLayout();
             this.RoomGroupBox.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // CourseListBox
             // 
             this.CourseListBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.CourseListBox.Font = new System.Drawing.Font("Segoe UI", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
+            this.CourseListBox.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.CourseListBox.FormattingEnabled = true;
             this.CourseListBox.ItemHeight = 30;
             this.CourseListBox.Items.AddRange(new object[] {
-            "C# fundamentals           \t| 2 Days\t| €900                   ",
+            " C# fundamentals           \t| 2 Days\t| €900                   ",
             " C# Basics for Beginners\t| 4 Days\t| €1,500              ",
-            " C# Intermediate            \t| 4 Days\t| €1,800             ",
-            " ASP.NET with C# Part A\t| 5 Days\t|€1,250              ",
-            " ASP.NET with C# Part B\t| 5 Days\t|€1,250           "});
+            " C# Intermediate            \t| 4 Days\t| €1,800 ",
+            " C# Advanced            \t| 2 Days\t| €2,300           ",
+            " ASP.NET with C# Part A\t| 5 Days\t| €1,250              ",
+            " ASP.NET with C# Part B\t| 5 Days\t| €1,250           "});
             this.CourseListBox.Location = new System.Drawing.Point(8, 191);
             this.CourseListBox.Name = "CourseListBox";
-            this.CourseListBox.Size = new System.Drawing.Size(567, 152);
+            this.CourseListBox.Size = new System.Drawing.Size(567, 182);
             this.CourseListBox.TabIndex = 0;
             // 
             // BannerOne
             // 
             this.BannerOne.Image = ((System.Drawing.Image)(resources.GetObject("BannerOne.Image")));
-            this.BannerOne.Location = new System.Drawing.Point(516, 3);
+            this.BannerOne.Location = new System.Drawing.Point(698, 614);
             this.BannerOne.Name = "BannerOne";
-            this.BannerOne.Size = new System.Drawing.Size(248, 91);
+            this.BannerOne.Size = new System.Drawing.Size(248, 122);
             this.BannerOne.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.BannerOne.TabIndex = 3;
             this.BannerOne.TabStop = false;
@@ -109,15 +109,15 @@
             // 
             this.textBox1.BackColor = System.Drawing.Color.White;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 34F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.textBox1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.textBox1.Location = new System.Drawing.Point(770, 3);
+            this.textBox1.Location = new System.Drawing.Point(1353, 623);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(445, 91);
+            this.textBox1.Size = new System.Drawing.Size(131, 65);
             this.textBox1.TabIndex = 6;
-            this.textBox1.Text = " Ltd Est. 1976";
+            this.textBox1.Text = " Ltd";
             // 
             // CourseMenuGroupBox
             // 
@@ -126,7 +126,7 @@
             this.CourseMenuGroupBox.Controls.Add(this.textBox3);
             this.CourseMenuGroupBox.Controls.Add(this.SelectCourseTextBox);
             this.CourseMenuGroupBox.Controls.Add(this.CourseListBox);
-            this.CourseMenuGroupBox.Location = new System.Drawing.Point(28, 107);
+            this.CourseMenuGroupBox.Location = new System.Drawing.Point(23, 24);
             this.CourseMenuGroupBox.Name = "CourseMenuGroupBox";
             this.CourseMenuGroupBox.Size = new System.Drawing.Size(595, 386);
             this.CourseMenuGroupBox.TabIndex = 7;
@@ -151,7 +151,7 @@
             this.textBox4.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.textBox4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.textBox4.ForeColor = System.Drawing.Color.White;
-            this.textBox4.Location = new System.Drawing.Point(306, 110);
+            this.textBox4.Location = new System.Drawing.Point(306, 109);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
             this.textBox4.ReadOnly = true;
@@ -179,9 +179,9 @@
             this.LocationGroupBox.Controls.Add(this.textBox7);
             this.LocationGroupBox.Controls.Add(this.textBox8);
             this.LocationGroupBox.Controls.Add(this.LocationListBox);
-            this.LocationGroupBox.Location = new System.Drawing.Point(642, 107);
+            this.LocationGroupBox.Location = new System.Drawing.Point(626, 24);
             this.LocationGroupBox.Name = "LocationGroupBox";
-            this.LocationGroupBox.Size = new System.Drawing.Size(595, 386);
+            this.LocationGroupBox.Size = new System.Drawing.Size(602, 386);
             this.LocationGroupBox.TabIndex = 9;
             this.LocationGroupBox.TabStop = false;
             // 
@@ -190,7 +190,7 @@
             this.textBox5.BackColor = System.Drawing.Color.SeaGreen;
             this.textBox5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.textBox5.ForeColor = System.Drawing.Color.White;
-            this.textBox5.Location = new System.Drawing.Point(8, 110);
+            this.textBox5.Location = new System.Drawing.Point(8, 109);
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
             this.textBox5.ReadOnly = true;
@@ -229,163 +229,133 @@
             // LocationListBox
             // 
             this.LocationListBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.LocationListBox.Font = new System.Drawing.Font("Segoe UI", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
+            this.LocationListBox.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.LocationListBox.FormattingEnabled = true;
             this.LocationListBox.ItemHeight = 30;
             this.LocationListBox.Items.AddRange(new object[] {
-            "Belmullet       \t\t\t|€219.99",
-            "Clifden            \t\t\t|€119.99",
-            "Cork                \t\t\t|€149.99",
-            "Dublin             \t\t\t|€179.99",
-            "Killamey         \t\t\t|€149.99",
-            "Letterkenny \t\t\t|€89.99",
-            "Sligo          \t\t\t|€119.99"});
-            this.LocationListBox.Location = new System.Drawing.Point(6, 180);
+            " Belmullet       \t\t\t|€219.99",
+            " Clifden            \t\t\t|€119.99",
+            " Cork                \t\t\t|€149.99",
+            " Dublin             \t\t\t|€179.99",
+            " Killamey         \t\t\t|€149.99",
+            " Letterkenny \t\t\t|€89.99",
+            " Sligo          \t\t\t|€119.99"});
+            this.LocationListBox.Location = new System.Drawing.Point(8, 191);
             this.LocationListBox.Name = "LocationListBox";
             this.LocationListBox.Size = new System.Drawing.Size(569, 182);
             this.LocationListBox.TabIndex = 0;
             // 
             // ParticipantGroupBox
             // 
+            this.ParticipantGroupBox.Controls.Add(this.textBox10);
             this.ParticipantGroupBox.Controls.Add(this.textBox9);
-            this.ParticipantGroupBox.Controls.Add(this.radioButton6);
-            this.ParticipantGroupBox.Controls.Add(this.radioButton5);
-            this.ParticipantGroupBox.Controls.Add(this.radioButton4);
-            this.ParticipantGroupBox.Controls.Add(this.radioButton3);
-            this.ParticipantGroupBox.Controls.Add(this.radioButton2);
-            this.ParticipantGroupBox.Controls.Add(this.radioButton1);
-            this.ParticipantGroupBox.Location = new System.Drawing.Point(1261, 107);
+            this.ParticipantGroupBox.Controls.Add(this.ExecutiveSuiteRadioButton);
+            this.ParticipantGroupBox.Controls.Add(this.JuniorSuiteRadioButton);
+            this.ParticipantGroupBox.Controls.Add(this.MasterSuiteRadioButton);
+            this.ParticipantGroupBox.Location = new System.Drawing.Point(168, 605);
             this.ParticipantGroupBox.Name = "ParticipantGroupBox";
-            this.ParticipantGroupBox.Size = new System.Drawing.Size(199, 386);
+            this.ParticipantGroupBox.Size = new System.Drawing.Size(278, 274);
             this.ParticipantGroupBox.TabIndex = 10;
             this.ParticipantGroupBox.TabStop = false;
+            // 
+            // textBox10
+            // 
+            this.textBox10.BackColor = System.Drawing.Color.White;
+            this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox10.Font = new System.Drawing.Font("Segoe UI", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.textBox10.Location = new System.Drawing.Point(55, 240);
+            this.textBox10.Multiline = true;
+            this.textBox10.Name = "textBox10";
+            this.textBox10.ReadOnly = true;
+            this.textBox10.Size = new System.Drawing.Size(170, 24);
+            this.textBox10.TabIndex = 13;
+            this.textBox10.Text = "*This is an optional upgrade";
             // 
             // textBox9
             // 
             this.textBox9.BackColor = System.Drawing.Color.IndianRed;
-            this.textBox9.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.textBox9.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.textBox9.ForeColor = System.Drawing.Color.White;
             this.textBox9.Location = new System.Drawing.Point(15, 40);
             this.textBox9.Multiline = true;
             this.textBox9.Name = "textBox9";
             this.textBox9.ReadOnly = true;
-            this.textBox9.Size = new System.Drawing.Size(168, 64);
+            this.textBox9.Size = new System.Drawing.Size(249, 64);
             this.textBox9.TabIndex = 12;
-            this.textBox9.Text = "Courses:";
+            this.textBox9.Text = "Room Upgrades*:";
             this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // radioButton6
+            // ExecutiveSuiteRadioButton
             // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Location = new System.Drawing.Point(15, 282);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(159, 29);
-            this.radioButton6.TabIndex = 5;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.Text = "6 Participants ";
-            this.radioButton6.UseVisualStyleBackColor = true;
+            this.ExecutiveSuiteRadioButton.AutoSize = true;
+            this.ExecutiveSuiteRadioButton.Location = new System.Drawing.Point(15, 142);
+            this.ExecutiveSuiteRadioButton.Name = "ExecutiveSuiteRadioButton";
+            this.ExecutiveSuiteRadioButton.Size = new System.Drawing.Size(249, 29);
+            this.ExecutiveSuiteRadioButton.TabIndex = 3;
+            this.ExecutiveSuiteRadioButton.TabStop = true;
+            this.ExecutiveSuiteRadioButton.Text = "Executive Suite @ €69.99";
+            this.ExecutiveSuiteRadioButton.UseVisualStyleBackColor = true;
             // 
-            // radioButton5
+            // JuniorSuiteRadioButton
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(15, 247);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(154, 29);
-            this.radioButton5.TabIndex = 4;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "5 Participants";
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.JuniorSuiteRadioButton.AutoSize = true;
+            this.JuniorSuiteRadioButton.Location = new System.Drawing.Point(15, 177);
+            this.JuniorSuiteRadioButton.Name = "JuniorSuiteRadioButton";
+            this.JuniorSuiteRadioButton.Size = new System.Drawing.Size(220, 29);
+            this.JuniorSuiteRadioButton.TabIndex = 2;
+            this.JuniorSuiteRadioButton.TabStop = true;
+            this.JuniorSuiteRadioButton.Text = "Junior Suite @ €49.99";
+            this.JuniorSuiteRadioButton.UseVisualStyleBackColor = true;
             // 
-            // radioButton4
+            // MasterSuiteRadioButton
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(15, 142);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(154, 29);
-            this.radioButton4.TabIndex = 3;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "2 Participants";
-            this.radioButton4.UseVisualStyleBackColor = true;
-            // 
-            // radioButton3
-            // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(15, 177);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(159, 29);
-            this.radioButton3.TabIndex = 2;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "3 Participants ";
-            this.radioButton3.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(15, 212);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(154, 29);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "4 Participants";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(15, 107);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(151, 29);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "1 Participant ";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.MasterSuiteRadioButton.AutoSize = true;
+            this.MasterSuiteRadioButton.Location = new System.Drawing.Point(15, 107);
+            this.MasterSuiteRadioButton.Name = "MasterSuiteRadioButton";
+            this.MasterSuiteRadioButton.Size = new System.Drawing.Size(226, 29);
+            this.MasterSuiteRadioButton.TabIndex = 0;
+            this.MasterSuiteRadioButton.TabStop = true;
+            this.MasterSuiteRadioButton.Text = "Master Suite @ €99.99";
+            this.MasterSuiteRadioButton.UseVisualStyleBackColor = true;
             // 
             // RoomGroupBox
             // 
             this.RoomGroupBox.BackColor = System.Drawing.Color.DarkGray;
-            this.RoomGroupBox.Controls.Add(this.checkBox4);
-            this.RoomGroupBox.Controls.Add(this.checkBox3);
-            this.RoomGroupBox.Controls.Add(this.checkBox2);
-            this.RoomGroupBox.Controls.Add(this.checkBox1);
-            this.RoomGroupBox.Location = new System.Drawing.Point(480, 535);
+            this.RoomGroupBox.Controls.Add(this.DigitalCertCheckBox);
+            this.RoomGroupBox.Controls.Add(this.textBox6);
+            this.RoomGroupBox.Location = new System.Drawing.Point(23, 416);
             this.RoomGroupBox.Name = "RoomGroupBox";
-            this.RoomGroupBox.Size = new System.Drawing.Size(980, 87);
+            this.RoomGroupBox.Size = new System.Drawing.Size(872, 48);
             this.RoomGroupBox.TabIndex = 11;
             this.RoomGroupBox.TabStop = false;
             // 
-            // checkBox3
+            // DigitalCertCheckBox
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(514, 40);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(221, 29);
-            this.checkBox3.TabIndex = 2;
-            this.checkBox3.Text = "Junior Suite @ €49.99";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.DigitalCertCheckBox.AutoSize = true;
+            this.DigitalCertCheckBox.Location = new System.Drawing.Point(724, 9);
+            this.DigitalCertCheckBox.Name = "DigitalCertCheckBox";
+            this.DigitalCertCheckBox.Size = new System.Drawing.Size(139, 29);
+            this.DigitalCertCheckBox.TabIndex = 17;
+            this.DigitalCertCheckBox.Text = "Yes (€39.99)";
+            this.DigitalCertCheckBox.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // textBox6
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(254, 40);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(250, 29);
-            this.checkBox2.TabIndex = 1;
-            this.checkBox2.Text = "Executive Suite @ €69.99";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(6, 40);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(227, 29);
-            this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "Master Suite @ €99.99";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.textBox6.BackColor = System.Drawing.Color.Black;
+            this.textBox6.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.textBox6.ForeColor = System.Drawing.Color.White;
+            this.textBox6.Location = new System.Drawing.Point(0, 0);
+            this.textBox6.Multiline = true;
+            this.textBox6.Name = "textBox6";
+            this.textBox6.ReadOnly = true;
+            this.textBox6.Size = new System.Drawing.Size(718, 48);
+            this.textBox6.TabIndex = 16;
+            this.textBox6.Text = "Do you wish to receive a digital course completion certificate?";
+            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // DisplayButton
             // 
-            this.DisplayButton.Location = new System.Drawing.Point(569, 668);
+            this.DisplayButton.Location = new System.Drawing.Point(626, 562);
             this.DisplayButton.Name = "DisplayButton";
             this.DisplayButton.Size = new System.Drawing.Size(112, 34);
             this.DisplayButton.TabIndex = 12;
@@ -393,30 +363,47 @@
             this.DisplayButton.UseVisualStyleBackColor = true;
             this.DisplayButton.MouseClick += new System.Windows.Forms.MouseEventHandler(this.DisplayButtonClick);
             // 
-            // checkBox4
+            // groupBox1
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(759, 40);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(147, 29);
-            this.checkBox4.TabIndex = 3;
-            this.checkBox4.Text = "No Upgrade!";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.groupBox1.Location = new System.Drawing.Point(675, 747);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(372, 87);
+            this.groupBox1.TabIndex = 13;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "groupBox1";
             // 
-            // textBox6
+            // groupBox2
             // 
-            this.textBox6.Location = new System.Drawing.Point(166, 550);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(166, 31);
-            this.textBox6.TabIndex = 13;
+            this.groupBox2.BackColor = System.Drawing.Color.DarkGray;
+            this.groupBox2.Controls.Add(this.textBox11);
+            this.groupBox2.Location = new System.Drawing.Point(23, 481);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(872, 48);
+            this.groupBox2.TabIndex = 14;
+            this.groupBox2.TabStop = false;
+            // 
+            // textBox11
+            // 
+            this.textBox11.BackColor = System.Drawing.Color.Black;
+            this.textBox11.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.textBox11.ForeColor = System.Drawing.Color.White;
+            this.textBox11.Location = new System.Drawing.Point(0, 0);
+            this.textBox11.Multiline = true;
+            this.textBox11.Name = "textBox11";
+            this.textBox11.ReadOnly = true;
+            this.textBox11.Size = new System.Drawing.Size(718, 48);
+            this.textBox11.TabIndex = 16;
+            this.textBox11.Text = "Do you wish to receive a digital course completion certificate?";
+            this.textBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1504, 1014);
-            this.Controls.Add(this.textBox6);
+            this.ClientSize = new System.Drawing.Size(1559, 1014);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.DisplayButton);
             this.Controls.Add(this.RoomGroupBox);
             this.Controls.Add(this.ParticipantGroupBox);
@@ -438,6 +425,8 @@
             this.ParticipantGroupBox.PerformLayout();
             this.RoomGroupBox.ResumeLayout(false);
             this.RoomGroupBox.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -460,19 +449,18 @@
         private TextBox textBox8;
         private ListBox LocationListBox;
         private GroupBox ParticipantGroupBox;
-        private RadioButton radioButton1;
-        private RadioButton radioButton6;
-        private RadioButton radioButton5;
-        private RadioButton radioButton4;
-        private RadioButton radioButton3;
+        private RadioButton MasterSuiteRadioButton;
+        private RadioButton ExecutiveSuiteRadioButton;
+        private RadioButton JuniorSuiteRadioButton;
         private RadioButton radioButton2;
         private GroupBox RoomGroupBox;
         private TextBox textBox9;
-        private CheckBox checkBox3;
-        private CheckBox checkBox2;
-        private CheckBox checkBox1;
         private Button DisplayButton;
-        private CheckBox checkBox4;
+        private TextBox textBox10;
+        private GroupBox groupBox1;
         private TextBox textBox6;
+        private CheckBox DigitalCertCheckBox;
+        private GroupBox groupBox2;
+        private TextBox textBox11;
     }
 }
