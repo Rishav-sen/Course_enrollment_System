@@ -7,38 +7,38 @@ namespace Assignment_2._0
 {
     public partial class form1 : Form
     {
-        public const decimal CSharpFundamentals = 900m;
-        public const decimal CSharpBasics = 1500m;
-        public const decimal CSharpIntermediate = 1800m;
+        public const decimal CSHARPFUNDAMENTALS  = 900m;
+        public const decimal CSHARPBASICS = 1500m;
+        public const decimal CSHARPINTERMEDIATE = 1800m;
         public const decimal CSharpAdv = 2300m;
-        public const decimal ASPPart1 = 1250m;
-        public const decimal ASPPart2 = 1250m;
+        public const decimal ASPPART1 = 1250m;
+        public const decimal ASPPART2 = 1250m;
 
-        public const String Course1 = "C# Fundamentals";
-        public const String Course2 = "C# Basics for Beginners";
-        public const String Course3 = "C# Intermediate";
-        public const String Course4 = "C# Advanced";
-        public const String Course5 = "ASP.NET with C# Part A";
-        public const String Course6 = "ASP.NET with C# Part B";
+        public const String COURSE1 = "C# Fundamentals";
+        public const String COURSE2 = "C# Basics for Beginners";
+        public const String COURSE3 = "C# Intermediate";
+        public const String COURSE4 = "C# Advanced";
+        public const String COURSE5 = "ASP.NET with C# Part A";
+        public const String COURSE6 = "ASP.NET with C# Part B";
 
         public string SelectedCourse = "";
 
 
-        public const decimal BelmulletPrice = 219.99m;
-        public const decimal ClifdenPrice = 119.99m;
-        public const decimal CorkPrice = 149.99m;
-        public const decimal DublinPrice = 179.99m;
-        public const decimal KillameyPrice = 149.99m;
-        public const decimal LetterkennyPrice = 89.99m;
-        public const decimal SligoPrice = 119.99m;
+        public const decimal BELMULLETPRICE = 219.99m;
+        public const decimal CLIFDENPRICE = 119.99m;
+        public const decimal CORKPRICE = 149.99m;
+        public const decimal DUBLINPRICE = 179.99m;
+        public const decimal KILLAMEYPRICE = 149.99m;
+        public const decimal LETTERKENNYPRICE = 89.99m;
+        public const decimal SLIGOPRICE = 119.99m;
 
-        public const String Location1 = "Belmullet";
-        public const String Location2 = "Clifden";
-        public const String Location3 = "Cork";
-        public const String Location4 = "Dublin";
-        public const String Location5 = "Killamey";
-        public const String Location6 = "Letterkenny";
-        public const String Location7 = "Sligo";
+        public const String LOCATION1 = "Belmullet";
+        public const String LOCATION2 = "Clifden";
+        public const String LOCATION3 = "Cork";
+        public const String LOCATION4 = "Dublin";
+        public const String LOCATION5 = "Killamey";
+        public const String LOCATION6 = "Letterkenny";
+        public const String LOCATION7 = "Sligo";
 
         public string SelectedLocation = "";
 
@@ -69,43 +69,43 @@ namespace Assignment_2._0
                     {
                         case 0:
                             {
-                                TotalCourseFees = BelmulletPrice;
-                                SelectedCourse = Course1;
+                                TotalCourseFees = CSHARPFUNDAMENTALS;
+                                SelectedCourse = COURSE1;
                                 MessageBox.Show(TotalCourseFees.ToString());
                                 break;
                             }
                         case 1:
                             {
-                                TotalCourseFees = CSharpBasics;
-                                SelectedCourse = Course2;
+                                TotalCourseFees = CSHARPBASICS;
+                                SelectedCourse = COURSE2;
                                 MessageBox.Show(TotalCourseFees.ToString());
                                 break;
                             }
                         case 2:
                             {
-                                TotalCourseFees = CSharpIntermediate;
-                                SelectedCourse = Course3;
+                                TotalCourseFees = CSHARPINTERMEDIATE;
+                                SelectedCourse = COURSE3;
                                 MessageBox.Show(TotalCourseFees.ToString()); ;
                                 break;
                             }
                         case 3:
                             {
                                 TotalCourseFees = CSharpAdv;
-                                SelectedCourse = Course4;
+                                SelectedCourse = COURSE4;
                                 MessageBox.Show(TotalCourseFees.ToString());
                                 break;
                             }
                         case 4:
                             {
-                                TotalCourseFees = ASPPart1;
-                                SelectedCourse = Course5;
+                                TotalCourseFees = ASPPART1;
+                                SelectedCourse = COURSE5;
                                 MessageBox.Show(TotalCourseFees.ToString());
                                 break;
                             }
                         case 5:
                             {
-                                TotalCourseFees = ASPPart2;
-                                SelectedCourse = Course6;
+                                TotalCourseFees = ASPPART2;
+                                SelectedCourse = COURSE6;
                                 MessageBox.Show(TotalCourseFees.ToString());
                                 break;
                             }
@@ -116,50 +116,50 @@ namespace Assignment_2._0
                     {
                         case 0:
                             {
-                                TotalLocationFees = BelmulletPrice;
-                                SelectedLocation = Location1;
+                                TotalLocationFees = BELMULLETPRICE;
+                                SelectedLocation = LOCATION1;
                                 MessageBox.Show(TotalLocationFees.ToString());
                                 break;
                             }
                         case 1:
                             {
-                                TotalLocationFees = ClifdenPrice;
-                                SelectedLocation = Location2;
+                                TotalLocationFees = CLIFDENPRICE;
+                                SelectedLocation = LOCATION2;
                                 MessageBox.Show(TotalLocationFees.ToString());
                                 break;
                             }
                         case 2:
                             {
-                                TotalLocationFees = CorkPrice;
-                                SelectedLocation = Location3;
+                                TotalLocationFees = CORKPRICE;
+                                SelectedLocation = LOCATION3;
                                 MessageBox.Show(TotalLocationFees.ToString()); ;
                                 break;
                             }
                         case 3:
                             {
-                                TotalLocationFees = DublinPrice;
-                                SelectedLocation = Location4;
+                                TotalLocationFees = DUBLINPRICE;
+                                SelectedLocation = LOCATION4;
                                 MessageBox.Show(TotalLocationFees.ToString());
                                 break;
                             }
                         case 4:
                             {
-                                TotalLocationFees = KillameyPrice;
-                                SelectedLocation = Location5;
+                                TotalLocationFees = KILLAMEYPRICE;
+                                SelectedLocation = LOCATION5;
                                 MessageBox.Show(TotalLocationFees.ToString());
                                 break;
                             }
                         case 5:
                             {
-                                TotalLocationFees = LetterkennyPrice;
-                                SelectedLocation = Location6;
+                                TotalLocationFees = LETTERKENNYPRICE;
+                                SelectedLocation = LOCATION6;
                                 MessageBox.Show(TotalLocationFees.ToString());
                                 break;
                             }
                         case 6:
                             {
-                                TotalLocationFees = SligoPrice;
-                                SelectedLocation = Location7;
+                                TotalLocationFees = SLIGOPRICE;
+                                SelectedLocation = LOCATION7;
                                 MessageBox.Show(TotalLocationFees.ToString());
                                 break;
                             }
@@ -181,7 +181,8 @@ namespace Assignment_2._0
                     }
                     catch  {
                         
-                        if (!NoParticipantsTextBox.Text.All(Char.IsDigit) || String.IsNullOrEmpty(NoParticipantsTextBox.Text))
+                        if (!NoParticipantsTextBox.Text.All(Char.IsDigit) 
+                            || String.IsNullOrEmpty(NoParticipantsTextBox.Text))
                         { MessageBox.Show("Please enter numerical data for number of participants", "Input Error", 
                             MessageBoxButtons.OK, MessageBoxIcon.Error); }
 
@@ -201,6 +202,6 @@ namespace Assignment_2._0
 
         }
 
-       
+        
     }
 }

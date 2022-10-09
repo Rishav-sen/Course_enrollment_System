@@ -57,6 +57,10 @@
             this.NoParticipantsTextBox = new System.Windows.Forms.TextBox();
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.DisplayGroupBox = new System.Windows.Forms.GroupBox();
+            this.textBox21 = new System.Windows.Forms.TextBox();
+            this.ClearButton = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.BookButton = new System.Windows.Forms.Button();
             this.textBox18 = new System.Windows.Forms.TextBox();
             this.textBox25 = new System.Windows.Forms.TextBox();
             this.textBox24 = new System.Windows.Forms.TextBox();
@@ -72,8 +76,7 @@
             this.textBox14 = new System.Windows.Forms.TextBox();
             this.textBox13 = new System.Windows.Forms.TextBox();
             this.textBox12 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.textBox23 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.BannerOne)).BeginInit();
             this.CourseMenuGroupBox.SuspendLayout();
             this.LocationGroupBox.SuspendLayout();
@@ -81,6 +84,7 @@
             this.RoomGroupBox.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.DisplayGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // CourseListBox
@@ -420,7 +424,11 @@
             // DisplayGroupBox
             // 
             this.DisplayGroupBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.DisplayGroupBox.Controls.Add(this.button2);
+            this.DisplayGroupBox.Controls.Add(this.textBox23);
+            this.DisplayGroupBox.Controls.Add(this.textBox21);
+            this.DisplayGroupBox.Controls.Add(this.ClearButton);
+            this.DisplayGroupBox.Controls.Add(this.pictureBox1);
+            this.DisplayGroupBox.Controls.Add(this.BookButton);
             this.DisplayGroupBox.Controls.Add(this.textBox18);
             this.DisplayGroupBox.Controls.Add(this.textBox25);
             this.DisplayGroupBox.Controls.Add(this.textBox24);
@@ -436,28 +444,68 @@
             this.DisplayGroupBox.Controls.Add(this.textBox14);
             this.DisplayGroupBox.Controls.Add(this.textBox13);
             this.DisplayGroupBox.Controls.Add(this.textBox12);
-            this.DisplayGroupBox.Location = new System.Drawing.Point(31, 605);
+            this.DisplayGroupBox.Location = new System.Drawing.Point(135, 416);
             this.DisplayGroupBox.Name = "DisplayGroupBox";
-            this.DisplayGroupBox.Size = new System.Drawing.Size(864, 433);
+            this.DisplayGroupBox.Size = new System.Drawing.Size(1008, 669);
             this.DisplayGroupBox.TabIndex = 15;
             this.DisplayGroupBox.TabStop = false;
+            // 
+            // textBox21
+            // 
+            this.textBox21.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.textBox21.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox21.Location = new System.Drawing.Point(552, 254);
+            this.textBox21.Multiline = true;
+            this.textBox21.Name = "textBox21";
+            this.textBox21.ReadOnly = true;
+            this.textBox21.Size = new System.Drawing.Size(221, 31);
+            this.textBox21.TabIndex = 18;
+            // 
+            // ClearButton
+            // 
+            this.ClearButton.Location = new System.Drawing.Point(648, 498);
+            this.ClearButton.Name = "ClearButton";
+            this.ClearButton.Size = new System.Drawing.Size(112, 34);
+            this.ClearButton.TabIndex = 16;
+            this.ClearButton.Text = "CLEAR";
+            this.ClearButton.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(397, 470);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(226, 106);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 17;
+            this.pictureBox1.TabStop = false;
+            // 
+            // BookButton
+            // 
+            this.BookButton.Location = new System.Drawing.Point(252, 498);
+            this.BookButton.Name = "BookButton";
+            this.BookButton.Size = new System.Drawing.Size(112, 34);
+            this.BookButton.TabIndex = 16;
+            this.BookButton.Text = "BOOK";
+            this.BookButton.UseVisualStyleBackColor = true;
             // 
             // textBox18
             // 
             this.textBox18.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.textBox18.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox18.Location = new System.Drawing.Point(128, 120);
+            this.textBox18.Location = new System.Drawing.Point(218, 291);
             this.textBox18.Multiline = true;
             this.textBox18.Name = "textBox18";
             this.textBox18.ReadOnly = true;
-            this.textBox18.Size = new System.Drawing.Size(221, 29);
+            this.textBox18.Size = new System.Drawing.Size(225, 35);
             this.textBox18.TabIndex = 15;
+            this.textBox18.Text = "Digital Certificate Cost:";
             // 
             // textBox25
             // 
             this.textBox25.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.textBox25.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox25.Location = new System.Drawing.Point(421, 268);
+            this.textBox25.Location = new System.Drawing.Point(552, 291);
             this.textBox25.Multiline = true;
             this.textBox25.Name = "textBox25";
             this.textBox25.ReadOnly = true;
@@ -468,7 +516,7 @@
             // 
             this.textBox24.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.textBox24.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox24.Location = new System.Drawing.Point(421, 353);
+            this.textBox24.Location = new System.Drawing.Point(552, 395);
             this.textBox24.Multiline = true;
             this.textBox24.Name = "textBox24";
             this.textBox24.ReadOnly = true;
@@ -479,7 +527,7 @@
             // 
             this.EnrollmentFeesDisplayTextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.EnrollmentFeesDisplayTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.EnrollmentFeesDisplayTextBox.Location = new System.Drawing.Point(421, 157);
+            this.EnrollmentFeesDisplayTextBox.Location = new System.Drawing.Point(552, 140);
             this.EnrollmentFeesDisplayTextBox.Multiline = true;
             this.EnrollmentFeesDisplayTextBox.Name = "EnrollmentFeesDisplayTextBox";
             this.EnrollmentFeesDisplayTextBox.ReadOnly = true;
@@ -490,7 +538,7 @@
             // 
             this.textBox22.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.textBox22.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox22.Location = new System.Drawing.Point(421, 231);
+            this.textBox22.Location = new System.Drawing.Point(552, 217);
             this.textBox22.Multiline = true;
             this.textBox22.Name = "textBox22";
             this.textBox22.ReadOnly = true;
@@ -501,7 +549,7 @@
             // 
             this.LodgingCostDisplayTextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.LodgingCostDisplayTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.LodgingCostDisplayTextBox.Location = new System.Drawing.Point(421, 194);
+            this.LodgingCostDisplayTextBox.Location = new System.Drawing.Point(552, 179);
             this.LodgingCostDisplayTextBox.Multiline = true;
             this.LodgingCostDisplayTextBox.Name = "LodgingCostDisplayTextBox";
             this.LodgingCostDisplayTextBox.ReadOnly = true;
@@ -512,7 +560,7 @@
             // 
             this.textBox20.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.textBox20.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox20.Location = new System.Drawing.Point(128, 266);
+            this.textBox20.Location = new System.Drawing.Point(218, 137);
             this.textBox20.Multiline = true;
             this.textBox20.Name = "textBox20";
             this.textBox20.ReadOnly = true;
@@ -524,11 +572,11 @@
             // 
             this.CourseSelectionDisplayTextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.CourseSelectionDisplayTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.CourseSelectionDisplayTextBox.Location = new System.Drawing.Point(298, 67);
+            this.CourseSelectionDisplayTextBox.Location = new System.Drawing.Point(349, 65);
             this.CourseSelectionDisplayTextBox.Multiline = true;
             this.CourseSelectionDisplayTextBox.Name = "CourseSelectionDisplayTextBox";
             this.CourseSelectionDisplayTextBox.ReadOnly = true;
-            this.CourseSelectionDisplayTextBox.Size = new System.Drawing.Size(221, 31);
+            this.CourseSelectionDisplayTextBox.Size = new System.Drawing.Size(323, 31);
             this.CourseSelectionDisplayTextBox.TabIndex = 8;
             // 
             // textBox19
@@ -536,7 +584,7 @@
             this.textBox19.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.textBox19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.textBox19.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox19.Location = new System.Drawing.Point(146, 309);
+            this.textBox19.Location = new System.Drawing.Point(285, 345);
             this.textBox19.Multiline = true;
             this.textBox19.Name = "textBox19";
             this.textBox19.ReadOnly = true;
@@ -548,7 +596,7 @@
             // 
             this.textBox17.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.textBox17.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox17.Location = new System.Drawing.Point(128, 351);
+            this.textBox17.Location = new System.Drawing.Point(237, 393);
             this.textBox17.Multiline = true;
             this.textBox17.Name = "textBox17";
             this.textBox17.ReadOnly = true;
@@ -560,7 +608,7 @@
             // 
             this.textBox16.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.textBox16.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox16.Location = new System.Drawing.Point(128, 155);
+            this.textBox16.Location = new System.Drawing.Point(218, 180);
             this.textBox16.Multiline = true;
             this.textBox16.Name = "textBox16";
             this.textBox16.ReadOnly = true;
@@ -572,7 +620,7 @@
             // 
             this.textBox15.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.textBox15.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox15.Location = new System.Drawing.Point(128, 192);
+            this.textBox15.Location = new System.Drawing.Point(218, 217);
             this.textBox15.Multiline = true;
             this.textBox15.Name = "textBox15";
             this.textBox15.ReadOnly = true;
@@ -588,7 +636,7 @@
             this.textBox14.Multiline = true;
             this.textBox14.Name = "textBox14";
             this.textBox14.ReadOnly = true;
-            this.textBox14.Size = new System.Drawing.Size(864, 44);
+            this.textBox14.Size = new System.Drawing.Size(1008, 44);
             this.textBox14.TabIndex = 2;
             this.textBox14.Text = "- Booking Details - ";
             this.textBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -597,43 +645,36 @@
             // 
             this.textBox13.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.textBox13.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox13.Location = new System.Drawing.Point(128, 229);
+            this.textBox13.Location = new System.Drawing.Point(218, 254);
             this.textBox13.Multiline = true;
             this.textBox13.Name = "textBox13";
             this.textBox13.ReadOnly = true;
             this.textBox13.Size = new System.Drawing.Size(225, 31);
             this.textBox13.TabIndex = 1;
-            this.textBox13.Text = "Optional Cost:";
+            this.textBox13.Text = "Room Upgade:";
             // 
             // textBox12
             // 
             this.textBox12.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.textBox12.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox12.Location = new System.Drawing.Point(128, 67);
+            this.textBox12.Location = new System.Drawing.Point(128, 65);
             this.textBox12.Multiline = true;
             this.textBox12.Name = "textBox12";
             this.textBox12.ReadOnly = true;
-            this.textBox12.Size = new System.Drawing.Size(186, 31);
+            this.textBox12.Size = new System.Drawing.Size(236, 31);
             this.textBox12.TabIndex = 0;
-            this.textBox12.Text = "Selected Course - ";
+            this.textBox12.Text = "Participant has opted to study ";
             // 
-            // button1
+            // textBox23
             // 
-            this.button1.Location = new System.Drawing.Point(272, 553);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(112, 34);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(168, 401);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(112, 34);
-            this.button2.TabIndex = 16;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.textBox23.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.textBox23.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox23.Location = new System.Drawing.Point(779, 254);
+            this.textBox23.Multiline = true;
+            this.textBox23.Name = "textBox23";
+            this.textBox23.ReadOnly = true;
+            this.textBox23.Size = new System.Drawing.Size(180, 31);
+            this.textBox23.TabIndex = 19;
             // 
             // form1
             // 
@@ -641,7 +682,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1245, 1050);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.DisplayGroupBox);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.DisplayButton);
@@ -669,6 +709,7 @@
             this.groupBox2.PerformLayout();
             this.DisplayGroupBox.ResumeLayout(false);
             this.DisplayGroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -710,7 +751,7 @@
         private TextBox textBox14;
         private TextBox textBox13;
         private TextBox textBox12;
-        private Button button1;
+        private Button ClearButton;
         private TextBox textBox18;
         private TextBox textBox25;
         private TextBox textBox24;
@@ -721,6 +762,9 @@
         private TextBox CourseSelectionDisplayTextBox;
         private TextBox textBox19;
         private TextBox textBox17;
-        private Button button2;
+        private Button BookButton;
+        private TextBox textBox21;
+        private PictureBox pictureBox1;
+        private TextBox textBox23;
     }
 }
