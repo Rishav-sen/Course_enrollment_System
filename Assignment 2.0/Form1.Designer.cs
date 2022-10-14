@@ -215,6 +215,7 @@
             this.SummaryGroupBox.Controls.Add(this.pictureBox2);
             this.SummaryGroupBox.Controls.Add(this.textBox21);
             this.SummaryGroupBox.Controls.Add(this.SummaryTotalNumberOfBookingsDisplay);
+            this.SummaryGroupBox.Controls.Add(this.textBox38);
             this.SummaryGroupBox.Controls.Add(this.SummaryAverageRevenueDisplay);
             this.SummaryGroupBox.Controls.Add(this.pictureBox3);
             this.SummaryGroupBox.Controls.Add(this.textBox26);
@@ -226,9 +227,8 @@
             this.SummaryGroupBox.Controls.Add(this.textBox35);
             this.SummaryGroupBox.Controls.Add(this.textBox36);
             this.SummaryGroupBox.Controls.Add(this.textBox37);
-            this.SummaryGroupBox.Controls.Add(this.textBox38);
             this.SummaryGroupBox.Controls.Add(this.textBox39);
-            this.SummaryGroupBox.Location = new System.Drawing.Point(1368, 63);
+            this.SummaryGroupBox.Location = new System.Drawing.Point(1367, 96);
             this.SummaryGroupBox.Name = "SummaryGroupBox";
             this.SummaryGroupBox.Size = new System.Drawing.Size(886, 512);
             this.SummaryGroupBox.TabIndex = 24;
@@ -435,11 +435,11 @@
             // 
             this.textBox38.BackColor = System.Drawing.Color.DodgerBlue;
             this.textBox38.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox38.Location = new System.Drawing.Point(-60, 1);
+            this.textBox38.Location = new System.Drawing.Point(0, 0);
             this.textBox38.Multiline = true;
             this.textBox38.Name = "textBox38";
             this.textBox38.ReadOnly = true;
-            this.textBox38.Size = new System.Drawing.Size(890, 44);
+            this.textBox38.Size = new System.Drawing.Size(925, 44);
             this.textBox38.TabIndex = 2;
             this.textBox38.Text = "- Summary Details - ";
             this.textBox38.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1029,7 +1029,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1598, 988);
+            this.ClientSize = new System.Drawing.Size(1331, 988);
             this.Controls.Add(this.SummaryGroupBox);
             this.Controls.Add(this.DisplayBookingDetailGroupBox);
             this.Controls.Add(this.SummaryButton);
