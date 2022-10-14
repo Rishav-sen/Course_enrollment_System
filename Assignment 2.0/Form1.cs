@@ -400,9 +400,14 @@ namespace Assignment_2._0
 
         private void SummaryButtonOnClick(object sender, MouseEventArgs e)
         {
+            SummaryGroupBox.Visible = true;
             SummaryTotalNumberOfBookingsDisplay.Text = SummaryTotalBookings.ToString();
             SummaryCourseEnrollmentDisplay.Text = SummaryCourseEnrollmentFees.ToString("c");
-            Summary = SummaryTotal 
-        }
+            SummaryTotalLodgingRevenueDisplay.Text = SummaryTotalLodgingFees.ToString("c");
+            SummaryAverageRevenueDisplay.Text = SummaryAvgRevenue.ToString("c");
+            SummaryOptionalRevenueDisplay.Text = SummaryTotalOptionalRevenue.ToString("c");
+            SummaryTotalTransWithDiscsDisplay.Text = SummaryTotalBookingsWithDiscount.ToString();
+            SummaryTotalRvenueDisplay.Text = SummaryTotalOptionalRevenue.ToString("c");
+         }
     }
 }

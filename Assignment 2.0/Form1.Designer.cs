@@ -409,7 +409,7 @@
             this.SummaryTotalLodgingRevenueDisplay.ReadOnly = true;
             this.SummaryTotalLodgingRevenueDisplay.Size = new System.Drawing.Size(221, 31);
             this.SummaryTotalLodgingRevenueDisplay.TabIndex = 11;
-            this.SummaryTotalLodgingRevenueDisplay.Text = "TotalLodgingRevenueDisplay";
+            this.SummaryTotalLodgingRevenueDisplay.Text = "SummaryTotalLodgingRevenueDisplay";
             this.SummaryTotalLodgingRevenueDisplay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // SummaryCourseEnrollmentDisplay
@@ -463,7 +463,7 @@
             this.textBox36.ReadOnly = true;
             this.textBox36.Size = new System.Drawing.Size(333, 31);
             this.textBox36.TabIndex = 4;
-            this.textBox36.Text = "Total number of Course Enrollment Fees:";
+            this.textBox36.Text = "Total amount of Course Enrollment Fees:";
             // 
             // textBox37
             // 
