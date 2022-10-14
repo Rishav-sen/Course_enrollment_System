@@ -378,18 +378,16 @@ namespace Assignment_2._0
             DigitalCertPrice = 0;
             GrandTotal = 0m;
             DiscountBit = false;
-            if(SummaryTotalBookings != 0)
+            if(SummaryTotalBookings > 0)
             {
                 SummaryButton.Enabled = true;
             }
 
-            SummaryButton.Enabled = true;
         }
 
         private void ClearSlate()
         {
             DisplayButton.Enabled = true;
-            SummaryButton.Enabled=true;
             DisplayBookingDetailGroupBox.Visible = false;
             CourseMenuGroupBox.Enabled = true;
             LocationGroupBox.Enabled = true;
@@ -429,7 +427,7 @@ namespace Assignment_2._0
             SummaryTotalNumberOfBookingsDisplay.Text = SummaryTotalBookings.ToString();
             SummaryCourseEnrollmentDisplay.Text =  SummaryEnrollmentFees.ToString("c");
             SummaryTotalLodgingRevenueDisplay.Text = SummaryTotalLodgingFees.ToString("c");
-            SummaryAverageRevenueDisplay.Text = (SummaryGrandTotal / SummaryTotalBookings).ToString("c");
+            SummaryAverageRevenueDisplay.Text = SummaryAvgRevenue.ToString("c");
             SummaryOptionalRevenueDisplay.Text = SummaryTotalOptionalRevenue.ToString("c");
             SummaryTotalTransWithDiscsDisplay.Text = SummaryTotalBookingsWithDiscount.ToString();
             SummaryTotalRvenueDisplay.Text = SummaryGrandTotal.ToString("c");

@@ -210,7 +210,7 @@
             // 
             // SummaryGroupBox
             // 
-            this.SummaryGroupBox.BackColor = System.Drawing.Color.White;
+            this.SummaryGroupBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.SummaryGroupBox.Controls.Add(this.SummaryTotalRvenueDisplay);
             this.SummaryGroupBox.Controls.Add(this.pictureBox2);
             this.SummaryGroupBox.Controls.Add(this.textBox21);
@@ -459,7 +459,7 @@
             // 
             // DisplayBookingDetailGroupBox
             // 
-            this.DisplayBookingDetailGroupBox.BackColor = System.Drawing.Color.White;
+            this.DisplayBookingDetailGroupBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.DisplayBookingDetailGroupBox.Controls.Add(this.BookCourseButton);
             this.DisplayBookingDetailGroupBox.Controls.Add(this.pictureBox1);
             this.DisplayBookingDetailGroupBox.Controls.Add(this.textBox22);
@@ -1029,7 +1029,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1341, 988);
+            this.ClientSize = new System.Drawing.Size(1598, 988);
             this.Controls.Add(this.SummaryGroupBox);
             this.Controls.Add(this.DisplayBookingDetailGroupBox);
             this.Controls.Add(this.SummaryButton);
