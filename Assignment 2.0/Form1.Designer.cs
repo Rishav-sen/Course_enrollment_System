@@ -39,18 +39,18 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.DisplayBookingDetailGroupBox = new System.Windows.Forms.GroupBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.SummaryGroupBox = new System.Windows.Forms.GroupBox();
+            this.SummaryTotalRvenueDisplay = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.textBox21 = new System.Windows.Forms.TextBox();
-            this.textBox23 = new System.Windows.Forms.TextBox();
-            this.textBox25 = new System.Windows.Forms.TextBox();
+            this.SummaryTotalNumberOfBookingsDisplay = new System.Windows.Forms.TextBox();
+            this.SummaryAverageRevenueDisplay = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.textBox26 = new System.Windows.Forms.TextBox();
-            this.textBox27 = new System.Windows.Forms.TextBox();
-            this.textBox28 = new System.Windows.Forms.TextBox();
-            this.textBox29 = new System.Windows.Forms.TextBox();
-            this.textBox30 = new System.Windows.Forms.TextBox();
-            this.textBox31 = new System.Windows.Forms.TextBox();
+            this.SummaryOptionalRevenueDisplay = new System.Windows.Forms.TextBox();
+            this.SummaryTotalTransWithDiscsDisplay = new System.Windows.Forms.TextBox();
+            this.SummaryTotalLodgingRevenueDisplay = new System.Windows.Forms.TextBox();
+            this.SummaryCourseEnrollmentDisplay = new System.Windows.Forms.TextBox();
             this.textBox32 = new System.Windows.Forms.TextBox();
             this.textBox35 = new System.Windows.Forms.TextBox();
             this.textBox36 = new System.Windows.Forms.TextBox();
@@ -103,7 +103,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.BannerOne)).BeginInit();
             this.CourseMenuGroupBox.SuspendLayout();
             this.DisplayBookingDetailGroupBox.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.SummaryGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -226,7 +226,7 @@
             // DisplayBookingDetailGroupBox
             // 
             this.DisplayBookingDetailGroupBox.BackColor = System.Drawing.Color.White;
-            this.DisplayBookingDetailGroupBox.Controls.Add(this.groupBox1);
+            this.DisplayBookingDetailGroupBox.Controls.Add(this.SummaryGroupBox);
             this.DisplayBookingDetailGroupBox.Controls.Add(this.BookCourseButton);
             this.DisplayBookingDetailGroupBox.Controls.Add(this.pictureBox1);
             this.DisplayBookingDetailGroupBox.Controls.Add(this.textBox22);
@@ -255,36 +255,50 @@
             this.DisplayBookingDetailGroupBox.TabIndex = 15;
             this.DisplayBookingDetailGroupBox.TabStop = false;
             // 
-            // groupBox1
+            // SummaryGroupBox
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.White;
-            this.groupBox1.Controls.Add(this.pictureBox2);
-            this.groupBox1.Controls.Add(this.textBox21);
-            this.groupBox1.Controls.Add(this.textBox23);
-            this.groupBox1.Controls.Add(this.textBox25);
-            this.groupBox1.Controls.Add(this.pictureBox3);
-            this.groupBox1.Controls.Add(this.textBox26);
-            this.groupBox1.Controls.Add(this.textBox27);
-            this.groupBox1.Controls.Add(this.textBox28);
-            this.groupBox1.Controls.Add(this.textBox29);
-            this.groupBox1.Controls.Add(this.textBox30);
-            this.groupBox1.Controls.Add(this.textBox31);
-            this.groupBox1.Controls.Add(this.textBox32);
-            this.groupBox1.Controls.Add(this.textBox35);
-            this.groupBox1.Controls.Add(this.textBox36);
-            this.groupBox1.Controls.Add(this.textBox37);
-            this.groupBox1.Controls.Add(this.textBox38);
-            this.groupBox1.Controls.Add(this.textBox39);
-            this.groupBox1.Location = new System.Drawing.Point(1, 1);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(880, 470);
-            this.groupBox1.TabIndex = 24;
-            this.groupBox1.TabStop = false;
+            this.SummaryGroupBox.BackColor = System.Drawing.Color.White;
+            this.SummaryGroupBox.Controls.Add(this.SummaryTotalRvenueDisplay);
+            this.SummaryGroupBox.Controls.Add(this.pictureBox2);
+            this.SummaryGroupBox.Controls.Add(this.textBox21);
+            this.SummaryGroupBox.Controls.Add(this.SummaryTotalNumberOfBookingsDisplay);
+            this.SummaryGroupBox.Controls.Add(this.SummaryAverageRevenueDisplay);
+            this.SummaryGroupBox.Controls.Add(this.pictureBox3);
+            this.SummaryGroupBox.Controls.Add(this.textBox26);
+            this.SummaryGroupBox.Controls.Add(this.SummaryOptionalRevenueDisplay);
+            this.SummaryGroupBox.Controls.Add(this.SummaryTotalTransWithDiscsDisplay);
+            this.SummaryGroupBox.Controls.Add(this.SummaryTotalLodgingRevenueDisplay);
+            this.SummaryGroupBox.Controls.Add(this.SummaryCourseEnrollmentDisplay);
+            this.SummaryGroupBox.Controls.Add(this.textBox32);
+            this.SummaryGroupBox.Controls.Add(this.textBox35);
+            this.SummaryGroupBox.Controls.Add(this.textBox36);
+            this.SummaryGroupBox.Controls.Add(this.textBox37);
+            this.SummaryGroupBox.Controls.Add(this.textBox38);
+            this.SummaryGroupBox.Controls.Add(this.textBox39);
+            this.SummaryGroupBox.Location = new System.Drawing.Point(1, 1);
+            this.SummaryGroupBox.Name = "SummaryGroupBox";
+            this.SummaryGroupBox.Size = new System.Drawing.Size(880, 470);
+            this.SummaryGroupBox.TabIndex = 24;
+            this.SummaryGroupBox.TabStop = false;
+            // 
+            // SummaryTotalRvenueDisplay
+            // 
+            this.SummaryTotalRvenueDisplay.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.SummaryTotalRvenueDisplay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.SummaryTotalRvenueDisplay.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.SummaryTotalRvenueDisplay.Location = new System.Drawing.Point(429, 394);
+            this.SummaryTotalRvenueDisplay.Multiline = true;
+            this.SummaryTotalRvenueDisplay.Name = "SummaryTotalRvenueDisplay";
+            this.SummaryTotalRvenueDisplay.ReadOnly = true;
+            this.SummaryTotalRvenueDisplay.Size = new System.Drawing.Size(221, 31);
+            this.SummaryTotalRvenueDisplay.TabIndex = 23;
+            this.SummaryTotalRvenueDisplay.Text = "SummaryTotalRvenueDisplay";
+            this.SummaryTotalRvenueDisplay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(335, 395);
+            this.pictureBox2.Location = new System.Drawing.Point(687, 190);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(184, 90);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -296,39 +310,41 @@
             this.textBox21.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.textBox21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.textBox21.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox21.Location = new System.Drawing.Point(89, 72);
+            this.textBox21.Location = new System.Drawing.Point(45, 97);
             this.textBox21.Multiline = true;
             this.textBox21.Name = "textBox21";
             this.textBox21.ReadOnly = true;
-            this.textBox21.Size = new System.Drawing.Size(270, 31);
+            this.textBox21.Size = new System.Drawing.Size(333, 31);
             this.textBox21.TabIndex = 21;
             this.textBox21.Text = "Total number of Bookings:";
             // 
-            // textBox23
+            // SummaryTotalNumberOfBookingsDisplay
             // 
-            this.textBox23.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.textBox23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox23.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox23.Location = new System.Drawing.Point(429, 72);
-            this.textBox23.Multiline = true;
-            this.textBox23.Name = "textBox23";
-            this.textBox23.ReadOnly = true;
-            this.textBox23.Size = new System.Drawing.Size(221, 31);
-            this.textBox23.TabIndex = 20;
-            this.textBox23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.SummaryTotalNumberOfBookingsDisplay.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.SummaryTotalNumberOfBookingsDisplay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.SummaryTotalNumberOfBookingsDisplay.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.SummaryTotalNumberOfBookingsDisplay.Location = new System.Drawing.Point(429, 87);
+            this.SummaryTotalNumberOfBookingsDisplay.Multiline = true;
+            this.SummaryTotalNumberOfBookingsDisplay.Name = "SummaryTotalNumberOfBookingsDisplay";
+            this.SummaryTotalNumberOfBookingsDisplay.ReadOnly = true;
+            this.SummaryTotalNumberOfBookingsDisplay.Size = new System.Drawing.Size(221, 31);
+            this.SummaryTotalNumberOfBookingsDisplay.TabIndex = 20;
+            this.SummaryTotalNumberOfBookingsDisplay.Text = "SummaryTotalNumberOfBookingsDisplay";
+            this.SummaryTotalNumberOfBookingsDisplay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox25
+            // SummaryAverageRevenueDisplay
             // 
-            this.textBox25.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.textBox25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox25.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox25.Location = new System.Drawing.Point(628, 246);
-            this.textBox25.Multiline = true;
-            this.textBox25.Name = "textBox25";
-            this.textBox25.ReadOnly = true;
-            this.textBox25.Size = new System.Drawing.Size(221, 31);
-            this.textBox25.TabIndex = 18;
-            this.textBox25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.SummaryAverageRevenueDisplay.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.SummaryAverageRevenueDisplay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.SummaryAverageRevenueDisplay.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.SummaryAverageRevenueDisplay.Location = new System.Drawing.Point(419, 249);
+            this.SummaryAverageRevenueDisplay.Multiline = true;
+            this.SummaryAverageRevenueDisplay.Name = "SummaryAverageRevenueDisplay";
+            this.SummaryAverageRevenueDisplay.ReadOnly = true;
+            this.SummaryAverageRevenueDisplay.Size = new System.Drawing.Size(221, 31);
+            this.SummaryAverageRevenueDisplay.TabIndex = 18;
+            this.SummaryAverageRevenueDisplay.Text = "SummaryAverageRevenue";
+            this.SummaryAverageRevenueDisplay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox3
             // 
@@ -346,89 +362,80 @@
             this.textBox26.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.textBox26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.textBox26.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox26.Location = new System.Drawing.Point(89, 246);
+            this.textBox26.Location = new System.Drawing.Point(45, 286);
             this.textBox26.Multiline = true;
             this.textBox26.Name = "textBox26";
             this.textBox26.ReadOnly = true;
-            this.textBox26.Size = new System.Drawing.Size(289, 35);
+            this.textBox26.Size = new System.Drawing.Size(333, 35);
             this.textBox26.TabIndex = 15;
             this.textBox26.Text = "Total Optional choice revenue:";
             // 
-            // textBox27
+            // SummaryOptionalRevenueDisplay
             // 
-            this.textBox27.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.textBox27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox27.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox27.Location = new System.Drawing.Point(591, 282);
-            this.textBox27.Multiline = true;
-            this.textBox27.Name = "textBox27";
-            this.textBox27.ReadOnly = true;
-            this.textBox27.Size = new System.Drawing.Size(221, 35);
-            this.textBox27.TabIndex = 14;
-            this.textBox27.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.SummaryOptionalRevenueDisplay.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.SummaryOptionalRevenueDisplay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.SummaryOptionalRevenueDisplay.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.SummaryOptionalRevenueDisplay.Location = new System.Drawing.Point(429, 286);
+            this.SummaryOptionalRevenueDisplay.Multiline = true;
+            this.SummaryOptionalRevenueDisplay.Name = "SummaryOptionalRevenueDisplay";
+            this.SummaryOptionalRevenueDisplay.ReadOnly = true;
+            this.SummaryOptionalRevenueDisplay.Size = new System.Drawing.Size(221, 35);
+            this.SummaryOptionalRevenueDisplay.TabIndex = 14;
+            this.SummaryOptionalRevenueDisplay.Text = "SummaryOptionalRevenueDisplay";
+            this.SummaryOptionalRevenueDisplay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox28
+            // SummaryTotalTransWithDiscsDisplay
             // 
-            this.textBox28.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.textBox28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox28.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox28.Location = new System.Drawing.Point(336, 358);
-            this.textBox28.Multiline = true;
-            this.textBox28.Name = "textBox28";
-            this.textBox28.ReadOnly = true;
-            this.textBox28.Size = new System.Drawing.Size(221, 31);
-            this.textBox28.TabIndex = 13;
-            this.textBox28.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.SummaryTotalTransWithDiscsDisplay.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.SummaryTotalTransWithDiscsDisplay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.SummaryTotalTransWithDiscsDisplay.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.SummaryTotalTransWithDiscsDisplay.Location = new System.Drawing.Point(419, 342);
+            this.SummaryTotalTransWithDiscsDisplay.Multiline = true;
+            this.SummaryTotalTransWithDiscsDisplay.Name = "SummaryTotalTransWithDiscsDisplay";
+            this.SummaryTotalTransWithDiscsDisplay.ReadOnly = true;
+            this.SummaryTotalTransWithDiscsDisplay.Size = new System.Drawing.Size(221, 31);
+            this.SummaryTotalTransWithDiscsDisplay.TabIndex = 13;
+            this.SummaryTotalTransWithDiscsDisplay.Text = "SummaryTotalTransWithDiscsDisplay";
+            this.SummaryTotalTransWithDiscsDisplay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox29
+            // SummaryTotalLodgingRevenueDisplay
             // 
-            this.textBox29.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.textBox29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox29.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox29.Location = new System.Drawing.Point(429, 116);
-            this.textBox29.Multiline = true;
-            this.textBox29.Name = "textBox29";
-            this.textBox29.ReadOnly = true;
-            this.textBox29.Size = new System.Drawing.Size(221, 31);
-            this.textBox29.TabIndex = 12;
-            this.textBox29.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.SummaryTotalLodgingRevenueDisplay.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.SummaryTotalLodgingRevenueDisplay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.SummaryTotalLodgingRevenueDisplay.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.SummaryTotalLodgingRevenueDisplay.Location = new System.Drawing.Point(419, 197);
+            this.SummaryTotalLodgingRevenueDisplay.Multiline = true;
+            this.SummaryTotalLodgingRevenueDisplay.Name = "SummaryTotalLodgingRevenueDisplay";
+            this.SummaryTotalLodgingRevenueDisplay.ReadOnly = true;
+            this.SummaryTotalLodgingRevenueDisplay.Size = new System.Drawing.Size(221, 31);
+            this.SummaryTotalLodgingRevenueDisplay.TabIndex = 11;
+            this.SummaryTotalLodgingRevenueDisplay.Text = "TotalLodgingRevenueDisplay";
+            this.SummaryTotalLodgingRevenueDisplay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox30
+            // SummaryCourseEnrollmentDisplay
             // 
-            this.textBox30.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.textBox30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox30.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox30.Location = new System.Drawing.Point(429, 209);
-            this.textBox30.Multiline = true;
-            this.textBox30.Name = "textBox30";
-            this.textBox30.ReadOnly = true;
-            this.textBox30.Size = new System.Drawing.Size(221, 31);
-            this.textBox30.TabIndex = 11;
-            this.textBox30.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox31
-            // 
-            this.textBox31.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.textBox31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox31.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox31.Location = new System.Drawing.Point(429, 171);
-            this.textBox31.Multiline = true;
-            this.textBox31.Name = "textBox31";
-            this.textBox31.ReadOnly = true;
-            this.textBox31.Size = new System.Drawing.Size(221, 31);
-            this.textBox31.TabIndex = 10;
-            this.textBox31.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.SummaryCourseEnrollmentDisplay.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.SummaryCourseEnrollmentDisplay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.SummaryCourseEnrollmentDisplay.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.SummaryCourseEnrollmentDisplay.Location = new System.Drawing.Point(429, 146);
+            this.SummaryCourseEnrollmentDisplay.Multiline = true;
+            this.SummaryCourseEnrollmentDisplay.Name = "SummaryCourseEnrollmentDisplay";
+            this.SummaryCourseEnrollmentDisplay.ReadOnly = true;
+            this.SummaryCourseEnrollmentDisplay.Size = new System.Drawing.Size(221, 31);
+            this.SummaryCourseEnrollmentDisplay.TabIndex = 10;
+            this.SummaryCourseEnrollmentDisplay.Text = "SummaryCourseEnrollmentDisplay";
+            this.SummaryCourseEnrollmentDisplay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox32
             // 
             this.textBox32.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.textBox32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.textBox32.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox32.Location = new System.Drawing.Point(77, 283);
+            this.textBox32.Location = new System.Drawing.Point(45, 342);
             this.textBox32.Multiline = true;
             this.textBox32.Name = "textBox32";
             this.textBox32.ReadOnly = true;
-            this.textBox32.Size = new System.Drawing.Size(314, 37);
+            this.textBox32.Size = new System.Drawing.Size(333, 37);
             this.textBox32.TabIndex = 9;
             this.textBox32.Text = "Transactions with Discount Apllied: ";
             // 
@@ -437,11 +444,11 @@
             this.textBox35.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.textBox35.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.textBox35.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox35.Location = new System.Drawing.Point(80, 358);
+            this.textBox35.Location = new System.Drawing.Point(45, 394);
             this.textBox35.Multiline = true;
             this.textBox35.Name = "textBox35";
             this.textBox35.ReadOnly = true;
-            this.textBox35.Size = new System.Drawing.Size(225, 33);
+            this.textBox35.Size = new System.Drawing.Size(333, 33);
             this.textBox35.TabIndex = 5;
             this.textBox35.Text = "Total Revenue:";
             // 
@@ -450,11 +457,11 @@
             this.textBox36.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.textBox36.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.textBox36.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox36.Location = new System.Drawing.Point(89, 116);
+            this.textBox36.Location = new System.Drawing.Point(45, 146);
             this.textBox36.Multiline = true;
             this.textBox36.Name = "textBox36";
             this.textBox36.ReadOnly = true;
-            this.textBox36.Size = new System.Drawing.Size(270, 31);
+            this.textBox36.Size = new System.Drawing.Size(333, 31);
             this.textBox36.TabIndex = 4;
             this.textBox36.Text = "Total number of Course Enrollment Fees:";
             // 
@@ -463,11 +470,11 @@
             this.textBox37.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.textBox37.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.textBox37.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox37.Location = new System.Drawing.Point(89, 169);
+            this.textBox37.Location = new System.Drawing.Point(45, 196);
             this.textBox37.Multiline = true;
             this.textBox37.Name = "textBox37";
             this.textBox37.ReadOnly = true;
-            this.textBox37.Size = new System.Drawing.Size(270, 32);
+            this.textBox37.Size = new System.Drawing.Size(333, 32);
             this.textBox37.TabIndex = 3;
             this.textBox37.Text = "Total Lodging revenue:";
             // 
@@ -489,11 +496,11 @@
             this.textBox39.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.textBox39.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.textBox39.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox39.Location = new System.Drawing.Point(105, 207);
+            this.textBox39.Location = new System.Drawing.Point(45, 244);
             this.textBox39.Multiline = true;
             this.textBox39.Name = "textBox39";
             this.textBox39.ReadOnly = true;
-            this.textBox39.Size = new System.Drawing.Size(225, 31);
+            this.textBox39.Size = new System.Drawing.Size(333, 31);
             this.textBox39.TabIndex = 1;
             this.textBox39.Text = "Average Revenue:";
             // 
@@ -1014,7 +1021,7 @@
             // ExitButton
             // 
             this.ExitButton.BackColor = System.Drawing.Color.OrangeRed;
-            this.ExitButton.Location = new System.Drawing.Point(1275, 4);
+            this.ExitButton.Location = new System.Drawing.Point(1265, 12);
             this.ExitButton.Name = "ExitButton";
             this.ExitButton.Size = new System.Drawing.Size(62, 53);
             this.ExitButton.TabIndex = 16;
@@ -1031,6 +1038,7 @@
             this.SummaryButton.TabIndex = 17;
             this.SummaryButton.Text = "SUMMARY";
             this.SummaryButton.UseVisualStyleBackColor = false;
+            this.SummaryButton.MouseClick += new System.Windows.Forms.MouseEventHandler(this.SummaryButtonOnClick);
             // 
             // form1
             // 
@@ -1060,8 +1068,8 @@
             this.CourseMenuGroupBox.PerformLayout();
             this.DisplayBookingDetailGroupBox.ResumeLayout(false);
             this.DisplayBookingDetailGroupBox.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.SummaryGroupBox.ResumeLayout(false);
+            this.SummaryGroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -1136,23 +1144,23 @@
         private PictureBox pictureBox1;
         private Button BookCourseButton;
         private Button ClearButtonMain;
-        private GroupBox groupBox1;
+        private GroupBox SummaryGroupBox;
         private PictureBox pictureBox2;
         private TextBox textBox21;
-        private TextBox textBox23;
-        private TextBox textBox25;
+        private TextBox SummaryTotalNumberOfBookingsDisplay;
+        private TextBox SummaryAverageRevenueDisplay;
         private PictureBox pictureBox3;
         private TextBox textBox26;
-        private TextBox textBox27;
-        private TextBox textBox28;
-        private TextBox textBox29;
-        private TextBox textBox30;
-        private TextBox textBox31;
+        private TextBox SummaryOptionalRevenueDisplay;
+        private TextBox SummaryTotalTransWithDiscsDisplay;
+        private TextBox SummaryTotalLodgingRevenueDisplay;
+        private TextBox SummaryCourseEnrollmentDisplay;
         private TextBox textBox32;
         private TextBox textBox35;
         private TextBox textBox36;
         private TextBox textBox37;
         private TextBox textBox38;
         private TextBox textBox39;
+        private TextBox SummaryTotalRvenueDisplay;
     }
 }

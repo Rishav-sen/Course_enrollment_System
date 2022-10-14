@@ -62,14 +62,15 @@ namespace Assignment_2._0
 
         public decimal SummaryCourseEnrollmentFees = 0m;
         public decimal SummaryLodgingFees = 0m;
-        
 
-        public decimal SummaryGrandTotal = 0m;
-        public decimal SummaryEnrollmentFees = 0m;
         public int SummaryTotalBookings = 0;
-        public decimal SummmaryAddionalOptionalCost = 0m;
+        public decimal SummaryEnrollmentFees = 0m;
+        public decimal SummaryTotalLodgingFees = 0m;
+        public decimal SummaryAvgRevenue = 0m;
+        public decimal SummaryTotalOptionalRevenue = 0m;
         public int SummaryTotalBookingsWithDiscount = 0;
-
+        public decimal SummaryGrandTotal = 0m;
+        
         //global variables to use in local 
         public decimal CourseEnrollmentFees = 0m;
         public decimal LodgingFees = 0m;
@@ -87,9 +88,8 @@ namespace Assignment_2._0
 
         private void Form1_Load(object sender, EventArgs e)
         {
-           
             DisplayBookingDetailGroupBox.Visible = false;
-            //SummaryGroupBox.Visible = false;
+            SummaryGroupBox.Visible = false;
         }
 
         public void DisplayButtonClick(object sender, MouseEventArgs e)
@@ -269,6 +269,7 @@ namespace Assignment_2._0
                                     + LodgingFees
                                     + RoomUpgradeCost
                                     + DigitalCertPrice;
+
                 if (participants >= 3 && RoomUpgradeType != "")
                 {
 
@@ -320,10 +321,15 @@ namespace Assignment_2._0
                 SummaryTotalBookings++;
                 SummaryCourseEnrollmentFees += CourseEnrollmentFees;
                 SummaryLodgingFees += LodgingFees;
-                SummmaryAddionalOptionalCost = SummmaryAddionalOptionalCost
+                SummaryTotalOptionalRevenue = SummaryTotalOptionalRevenue
                                                 + RoomUpgradeCost
                                                 + DigitalCertPrice;
                 SummaryTotalBookingsWithDiscount++;
+                SummaryTotalBookings++;
+                SummaryGrandTotal = SummaryEnrollmentFees + SummaryLodgingFees + SummaryTotalOptionalRevenue;
+                SummaryAvgRevenue = SummaryGrandTotal/SummaryTotalBookings;
+                
+
                 MessageBox.Show("Your Booking as has been Processed.",
                      "Booking Complete", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
@@ -392,6 +398,11 @@ namespace Assignment_2._0
             
         }
 
-       
+        private void SummaryButtonOnClick(object sender, MouseEventArgs e)
+        {
+            SummaryTotalNumberOfBookingsDisplay.Text = SummaryTotalBookings.ToString();
+            SummaryCourseEnrollmentDisplay.Text = SummaryCourseEnrollmentFees.ToString("c");
+            Summary = SummaryTotal 
+        }
     }
 }
