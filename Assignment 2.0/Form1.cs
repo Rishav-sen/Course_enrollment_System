@@ -60,9 +60,7 @@ namespace Assignment_2._0
 
         public const decimal DIGITALCERT = 39.99m;
 
-        public decimal SummaryCourseEnrollmentFees = 0m;
-        public decimal SummaryLodgingFees = 0m;
-
+        
         public int SummaryTotalBookings = 0;
         public decimal SummaryEnrollmentFees = 0m;
         public decimal SummaryTotalLodgingFees = 0m;
@@ -79,6 +77,8 @@ namespace Assignment_2._0
         public decimal DigitalCertPrice = 0;
         public decimal GrandTotal = 0m;
         public decimal Discount = 0m;
+        public Boolean DiscountBit = false;
+        
 
 
         public form1()
@@ -88,8 +88,11 @@ namespace Assignment_2._0
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            SummaryGroupBox.Location = DisplayBookingDetailGroupBox.Location ;
             DisplayBookingDetailGroupBox.Visible = false;
             SummaryGroupBox.Visible = false;
+            SummaryButton.Enabled = false;
+            
         }
 
         public void DisplayButtonClick(object sender, MouseEventArgs e)
@@ -272,7 +275,7 @@ namespace Assignment_2._0
 
                 if (participants >= 3 && RoomUpgradeType != "")
                 {
-
+                    DiscountBit = true;
                     Discount = GrandTotal * 0.075m;
                     GrandTotal *= 0.925m;
                     DiscAppliedDisplayTextBox.Text = "-" + (Discount.ToString("c"));
@@ -289,7 +292,7 @@ namespace Assignment_2._0
                 NoPArticipantsDisplayTextBox.Text = NoParticipantsTextBox.Text;
                 EnrollmentFeesDisplayTextBox.Text = CourseEnrollmentFees.ToString("c");
                 LodgingCostDisplayTextBox.Text = LodgingFees.ToString("c");
-                RoomUpgradeTypeDisplayTextBox.Text = "(" + RoomUpgradeType.ToString() + ")";
+                RoomUpgradeTypeDisplayTextBox.Text = RoomUpgradeType.ToString();
                 RoomUpgradeCostDisplayTextBox.Text = RoomUpgradeCost.ToString("c");
                 DigiCertValueDisplayTextBox.Text = DigitalCertPrice.ToString("c");
                 GrandTotalDisplayTextBox.Text = GrandTotal.ToString("c");
@@ -319,15 +322,18 @@ namespace Assignment_2._0
             {
                 //Global Variables
                 SummaryTotalBookings++;
-                SummaryCourseEnrollmentFees += CourseEnrollmentFees;
-                SummaryLodgingFees += LodgingFees;
+                SummaryEnrollmentFees += CourseEnrollmentFees;
+                SummaryTotalLodgingFees += LodgingFees;
                 SummaryTotalOptionalRevenue = SummaryTotalOptionalRevenue
                                                 + RoomUpgradeCost
                                                 + DigitalCertPrice;
-                SummaryTotalBookingsWithDiscount++;
-                SummaryTotalBookings++;
-                SummaryGrandTotal = SummaryEnrollmentFees + SummaryLodgingFees + SummaryTotalOptionalRevenue;
-                SummaryAvgRevenue = SummaryGrandTotal/SummaryTotalBookings;
+                if (DiscountBit ==  true)
+                {
+                    SummaryTotalBookingsWithDiscount++;
+                }
+                
+                SummaryGrandTotal = SummaryEnrollmentFees + SummaryTotalLodgingFees + SummaryTotalOptionalRevenue;
+                SummaryAvgRevenue = SummaryGrandTotal / SummaryTotalBookings;
                 
 
                 MessageBox.Show("Your Booking as has been Processed.",
@@ -335,12 +341,20 @@ namespace Assignment_2._0
 
                 ClearSlate();
                 SummaryButton.Enabled = true;
+                CourseEnrollmentFees = 0m;
+                LodgingFees = 0m;
+                RoomUpgradeCost = 0m;
+                RoomUpgradeType = "";
+                DigitalCertPrice = 0;
+                GrandTotal = 0m;
+                DiscountBit = false;
 
 
             }
             else
             {
                 ClearSlate();
+                
             }
             
               
@@ -363,10 +377,19 @@ namespace Assignment_2._0
             RoomUpgradeType = "";
             DigitalCertPrice = 0;
             GrandTotal = 0m;
+            DiscountBit = false;
+            if(SummaryTotalBookings != 0)
+            {
+                SummaryButton.Enabled = true;
+            }
+
+            SummaryButton.Enabled = true;
         }
 
         private void ClearSlate()
         {
+            DisplayButton.Enabled = true;
+            SummaryButton.Enabled=true;
             DisplayBookingDetailGroupBox.Visible = false;
             CourseMenuGroupBox.Enabled = true;
             LocationGroupBox.Enabled = true;
@@ -395,19 +418,31 @@ namespace Assignment_2._0
             DisplayBookingDetailGroupBox.Visible = false;
             NoParticipantsTextBox.Text = "";
             SummaryButton.Visible = true;
+            SummaryGroupBox.Visible = false;    
             
         }
 
         private void SummaryButtonOnClick(object sender, MouseEventArgs e)
         {
+            DisplayButton.Enabled = false;
             SummaryGroupBox.Visible = true;
             SummaryTotalNumberOfBookingsDisplay.Text = SummaryTotalBookings.ToString();
-            SummaryCourseEnrollmentDisplay.Text = SummaryCourseEnrollmentFees.ToString("c");
+            SummaryCourseEnrollmentDisplay.Text =  SummaryEnrollmentFees.ToString("c");
             SummaryTotalLodgingRevenueDisplay.Text = SummaryTotalLodgingFees.ToString("c");
-            SummaryAverageRevenueDisplay.Text = SummaryAvgRevenue.ToString("c");
+            SummaryAverageRevenueDisplay.Text = (SummaryGrandTotal / SummaryTotalBookings).ToString("c");
             SummaryOptionalRevenueDisplay.Text = SummaryTotalOptionalRevenue.ToString("c");
             SummaryTotalTransWithDiscsDisplay.Text = SummaryTotalBookingsWithDiscount.ToString();
-            SummaryTotalRvenueDisplay.Text = SummaryTotalOptionalRevenue.ToString("c");
-         }
+            SummaryTotalRvenueDisplay.Text = SummaryGrandTotal.ToString("c");
+
+            DisplayBookingDetailGroupBox.Visible = true;
+            CourseMenuGroupBox.Enabled = false;
+            LocationGroupBox.Enabled = false;
+            CertCollectGroupBox.Enabled = false;
+            ParticipantsCollectGroupBox.Enabled = false;
+            RoomUpgradeGroupBox.Enabled = false;
+            
+        }
+
+        
     }
 }

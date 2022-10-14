@@ -33,12 +33,10 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.BannerOne = new System.Windows.Forms.PictureBox();
             this.SelectCourseTextBox = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.CourseMenuGroupBox = new System.Windows.Forms.GroupBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.DisplayBookingDetailGroupBox = new System.Windows.Forms.GroupBox();
             this.SummaryGroupBox = new System.Windows.Forms.GroupBox();
             this.SummaryTotalRvenueDisplay = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -57,6 +55,7 @@
             this.textBox37 = new System.Windows.Forms.TextBox();
             this.textBox38 = new System.Windows.Forms.TextBox();
             this.textBox39 = new System.Windows.Forms.TextBox();
+            this.DisplayBookingDetailGroupBox = new System.Windows.Forms.GroupBox();
             this.BookCourseButton = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBox22 = new System.Windows.Forms.TextBox();
@@ -102,10 +101,10 @@
             this.SummaryButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.BannerOne)).BeginInit();
             this.CourseMenuGroupBox.SuspendLayout();
-            this.DisplayBookingDetailGroupBox.SuspendLayout();
             this.SummaryGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.DisplayBookingDetailGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BannerTwo)).BeginInit();
             this.LocationGroupBox.SuspendLayout();
@@ -154,20 +153,6 @@
             this.SelectCourseTextBox.Size = new System.Drawing.Size(567, 65);
             this.SelectCourseTextBox.TabIndex = 5;
             this.SelectCourseTextBox.Text = "Select Course:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.White;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.textBox1.Location = new System.Drawing.Point(1353, 623);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(131, 65);
-            this.textBox1.TabIndex = 6;
-            this.textBox1.Text = " Ltd";
             // 
             // CourseMenuGroupBox
             // 
@@ -223,38 +208,6 @@
             this.textBox3.TabIndex = 7;
             this.textBox3.Text = "Enrollment Fees:";
             // 
-            // DisplayBookingDetailGroupBox
-            // 
-            this.DisplayBookingDetailGroupBox.BackColor = System.Drawing.Color.White;
-            this.DisplayBookingDetailGroupBox.Controls.Add(this.SummaryGroupBox);
-            this.DisplayBookingDetailGroupBox.Controls.Add(this.BookCourseButton);
-            this.DisplayBookingDetailGroupBox.Controls.Add(this.pictureBox1);
-            this.DisplayBookingDetailGroupBox.Controls.Add(this.textBox22);
-            this.DisplayBookingDetailGroupBox.Controls.Add(this.NoPArticipantsDisplayTextBox);
-            this.DisplayBookingDetailGroupBox.Controls.Add(this.RoomUpgradeTypeDisplayTextBox);
-            this.DisplayBookingDetailGroupBox.Controls.Add(this.DigiCertValueDisplayTextBox);
-            this.DisplayBookingDetailGroupBox.Controls.Add(this.BannerTwo);
-            this.DisplayBookingDetailGroupBox.Controls.Add(this.textBox18);
-            this.DisplayBookingDetailGroupBox.Controls.Add(this.DiscAppliedDisplayTextBox);
-            this.DisplayBookingDetailGroupBox.Controls.Add(this.GrandTotalDisplayTextBox);
-            this.DisplayBookingDetailGroupBox.Controls.Add(this.EnrollmentFeesDisplayTextBox);
-            this.DisplayBookingDetailGroupBox.Controls.Add(this.RoomUpgradeCostDisplayTextBox);
-            this.DisplayBookingDetailGroupBox.Controls.Add(this.LodgingCostDisplayTextBox);
-            this.DisplayBookingDetailGroupBox.Controls.Add(this.textBox20);
-            this.DisplayBookingDetailGroupBox.Controls.Add(this.CourseSelectionDisplayTextBox);
-            this.DisplayBookingDetailGroupBox.Controls.Add(this.textBox19);
-            this.DisplayBookingDetailGroupBox.Controls.Add(this.textBox17);
-            this.DisplayBookingDetailGroupBox.Controls.Add(this.textBox16);
-            this.DisplayBookingDetailGroupBox.Controls.Add(this.textBox15);
-            this.DisplayBookingDetailGroupBox.Controls.Add(this.textBox14);
-            this.DisplayBookingDetailGroupBox.Controls.Add(this.textBox13);
-            this.DisplayBookingDetailGroupBox.Controls.Add(this.textBox12);
-            this.DisplayBookingDetailGroupBox.Location = new System.Drawing.Point(28, 493);
-            this.DisplayBookingDetailGroupBox.Name = "DisplayBookingDetailGroupBox";
-            this.DisplayBookingDetailGroupBox.Size = new System.Drawing.Size(880, 470);
-            this.DisplayBookingDetailGroupBox.TabIndex = 15;
-            this.DisplayBookingDetailGroupBox.TabStop = false;
-            // 
             // SummaryGroupBox
             // 
             this.SummaryGroupBox.BackColor = System.Drawing.Color.White;
@@ -275,9 +228,9 @@
             this.SummaryGroupBox.Controls.Add(this.textBox37);
             this.SummaryGroupBox.Controls.Add(this.textBox38);
             this.SummaryGroupBox.Controls.Add(this.textBox39);
-            this.SummaryGroupBox.Location = new System.Drawing.Point(1, 1);
+            this.SummaryGroupBox.Location = new System.Drawing.Point(1368, 63);
             this.SummaryGroupBox.Name = "SummaryGroupBox";
-            this.SummaryGroupBox.Size = new System.Drawing.Size(880, 470);
+            this.SummaryGroupBox.Size = new System.Drawing.Size(886, 512);
             this.SummaryGroupBox.TabIndex = 24;
             this.SummaryGroupBox.TabStop = false;
             // 
@@ -286,7 +239,7 @@
             this.SummaryTotalRvenueDisplay.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.SummaryTotalRvenueDisplay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.SummaryTotalRvenueDisplay.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.SummaryTotalRvenueDisplay.Location = new System.Drawing.Point(429, 394);
+            this.SummaryTotalRvenueDisplay.Location = new System.Drawing.Point(419, 394);
             this.SummaryTotalRvenueDisplay.Multiline = true;
             this.SummaryTotalRvenueDisplay.Name = "SummaryTotalRvenueDisplay";
             this.SummaryTotalRvenueDisplay.ReadOnly = true;
@@ -323,7 +276,7 @@
             this.SummaryTotalNumberOfBookingsDisplay.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.SummaryTotalNumberOfBookingsDisplay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.SummaryTotalNumberOfBookingsDisplay.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.SummaryTotalNumberOfBookingsDisplay.Location = new System.Drawing.Point(429, 87);
+            this.SummaryTotalNumberOfBookingsDisplay.Location = new System.Drawing.Point(419, 97);
             this.SummaryTotalNumberOfBookingsDisplay.Multiline = true;
             this.SummaryTotalNumberOfBookingsDisplay.Name = "SummaryTotalNumberOfBookingsDisplay";
             this.SummaryTotalNumberOfBookingsDisplay.ReadOnly = true;
@@ -337,7 +290,7 @@
             this.SummaryAverageRevenueDisplay.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.SummaryAverageRevenueDisplay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.SummaryAverageRevenueDisplay.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.SummaryAverageRevenueDisplay.Location = new System.Drawing.Point(419, 249);
+            this.SummaryAverageRevenueDisplay.Location = new System.Drawing.Point(419, 244);
             this.SummaryAverageRevenueDisplay.Multiline = true;
             this.SummaryAverageRevenueDisplay.Name = "SummaryAverageRevenueDisplay";
             this.SummaryAverageRevenueDisplay.ReadOnly = true;
@@ -375,7 +328,7 @@
             this.SummaryOptionalRevenueDisplay.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.SummaryOptionalRevenueDisplay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.SummaryOptionalRevenueDisplay.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.SummaryOptionalRevenueDisplay.Location = new System.Drawing.Point(429, 286);
+            this.SummaryOptionalRevenueDisplay.Location = new System.Drawing.Point(419, 286);
             this.SummaryOptionalRevenueDisplay.Multiline = true;
             this.SummaryOptionalRevenueDisplay.Name = "SummaryOptionalRevenueDisplay";
             this.SummaryOptionalRevenueDisplay.ReadOnly = true;
@@ -417,7 +370,7 @@
             this.SummaryCourseEnrollmentDisplay.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.SummaryCourseEnrollmentDisplay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.SummaryCourseEnrollmentDisplay.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.SummaryCourseEnrollmentDisplay.Location = new System.Drawing.Point(429, 146);
+            this.SummaryCourseEnrollmentDisplay.Location = new System.Drawing.Point(419, 146);
             this.SummaryCourseEnrollmentDisplay.Multiline = true;
             this.SummaryCourseEnrollmentDisplay.Name = "SummaryCourseEnrollmentDisplay";
             this.SummaryCourseEnrollmentDisplay.ReadOnly = true;
@@ -482,11 +435,11 @@
             // 
             this.textBox38.BackColor = System.Drawing.Color.DodgerBlue;
             this.textBox38.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox38.Location = new System.Drawing.Point(0, 1);
+            this.textBox38.Location = new System.Drawing.Point(-60, 1);
             this.textBox38.Multiline = true;
             this.textBox38.Name = "textBox38";
             this.textBox38.ReadOnly = true;
-            this.textBox38.Size = new System.Drawing.Size(880, 44);
+            this.textBox38.Size = new System.Drawing.Size(890, 44);
             this.textBox38.TabIndex = 2;
             this.textBox38.Text = "- Summary Details - ";
             this.textBox38.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -503,6 +456,37 @@
             this.textBox39.Size = new System.Drawing.Size(333, 31);
             this.textBox39.TabIndex = 1;
             this.textBox39.Text = "Average Revenue:";
+            // 
+            // DisplayBookingDetailGroupBox
+            // 
+            this.DisplayBookingDetailGroupBox.BackColor = System.Drawing.Color.White;
+            this.DisplayBookingDetailGroupBox.Controls.Add(this.BookCourseButton);
+            this.DisplayBookingDetailGroupBox.Controls.Add(this.pictureBox1);
+            this.DisplayBookingDetailGroupBox.Controls.Add(this.textBox22);
+            this.DisplayBookingDetailGroupBox.Controls.Add(this.NoPArticipantsDisplayTextBox);
+            this.DisplayBookingDetailGroupBox.Controls.Add(this.RoomUpgradeTypeDisplayTextBox);
+            this.DisplayBookingDetailGroupBox.Controls.Add(this.DigiCertValueDisplayTextBox);
+            this.DisplayBookingDetailGroupBox.Controls.Add(this.BannerTwo);
+            this.DisplayBookingDetailGroupBox.Controls.Add(this.textBox18);
+            this.DisplayBookingDetailGroupBox.Controls.Add(this.DiscAppliedDisplayTextBox);
+            this.DisplayBookingDetailGroupBox.Controls.Add(this.GrandTotalDisplayTextBox);
+            this.DisplayBookingDetailGroupBox.Controls.Add(this.EnrollmentFeesDisplayTextBox);
+            this.DisplayBookingDetailGroupBox.Controls.Add(this.RoomUpgradeCostDisplayTextBox);
+            this.DisplayBookingDetailGroupBox.Controls.Add(this.LodgingCostDisplayTextBox);
+            this.DisplayBookingDetailGroupBox.Controls.Add(this.textBox20);
+            this.DisplayBookingDetailGroupBox.Controls.Add(this.CourseSelectionDisplayTextBox);
+            this.DisplayBookingDetailGroupBox.Controls.Add(this.textBox19);
+            this.DisplayBookingDetailGroupBox.Controls.Add(this.textBox17);
+            this.DisplayBookingDetailGroupBox.Controls.Add(this.textBox16);
+            this.DisplayBookingDetailGroupBox.Controls.Add(this.textBox15);
+            this.DisplayBookingDetailGroupBox.Controls.Add(this.textBox14);
+            this.DisplayBookingDetailGroupBox.Controls.Add(this.textBox13);
+            this.DisplayBookingDetailGroupBox.Controls.Add(this.textBox12);
+            this.DisplayBookingDetailGroupBox.Location = new System.Drawing.Point(28, 493);
+            this.DisplayBookingDetailGroupBox.Name = "DisplayBookingDetailGroupBox";
+            this.DisplayBookingDetailGroupBox.Size = new System.Drawing.Size(880, 470);
+            this.DisplayBookingDetailGroupBox.TabIndex = 15;
+            this.DisplayBookingDetailGroupBox.TabStop = false;
             // 
             // BookCourseButton
             // 
@@ -1045,7 +1029,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1336, 988);
+            this.ClientSize = new System.Drawing.Size(1341, 988);
+            this.Controls.Add(this.SummaryGroupBox);
             this.Controls.Add(this.DisplayBookingDetailGroupBox);
             this.Controls.Add(this.SummaryButton);
             this.Controls.Add(this.ExitButton);
@@ -1056,7 +1041,6 @@
             this.Controls.Add(this.CertCollectGroupBox);
             this.Controls.Add(this.LocationGroupBox);
             this.Controls.Add(this.CourseMenuGroupBox);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.BannerOne);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -1066,12 +1050,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.BannerOne)).EndInit();
             this.CourseMenuGroupBox.ResumeLayout(false);
             this.CourseMenuGroupBox.PerformLayout();
-            this.DisplayBookingDetailGroupBox.ResumeLayout(false);
-            this.DisplayBookingDetailGroupBox.PerformLayout();
             this.SummaryGroupBox.ResumeLayout(false);
             this.SummaryGroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.DisplayBookingDetailGroupBox.ResumeLayout(false);
+            this.DisplayBookingDetailGroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BannerTwo)).EndInit();
             this.LocationGroupBox.ResumeLayout(false);
@@ -1083,7 +1067,6 @@
             this.ParticipantsCollectGroupBox.ResumeLayout(false);
             this.ParticipantsCollectGroupBox.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
